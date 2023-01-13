@@ -1,0 +1,35 @@
+<ion-header>
+  <ion-toolbar color="dark">
+    <ion-title>
+      Stoic
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content color="dark">
+  <ion-slides pager="true" [options]="slideOpts">
+    <ion-slide *ngFor="let item of shuffledCollection">
+      <ion-item color="dark" class="author">
+        <ion-avatar slot="start">
+          <img alt="Silhouette of a person's head" src="{{item.img}}" />
+        </ion-avatar>
+        <ion-label>
+          <h2>{{item.author}}</h2>
+          <p class="desc">{{item.desc}}</p>
+        </ion-label>
+      </ion-item>
+      <div class="quote-container">
+        <p>"{{item.quote}}"</p>
+      </div>
+    </ion-slide>
+  </ion-slides>
+</ion-content>
+<!-- <ion-footer>
+  <ion-toolbar>
+    <div>
+      <ion-title>
+        <span>All Quotes</span>
+        <span>1 of 716</span>
+      </ion-title>
+    </div>
+  </ion-toolbar>
+</ion-footer> -->
