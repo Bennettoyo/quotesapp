@@ -10,7 +10,7 @@ export class HomePage {
   number = Math.floor(Math.random() * 10) + 1;
   slideOpts = {
     initialSlide: 0,
-    speed: 500,
+    speed: 300,
     pagination: false,
     autoHeight: true,
   };
@@ -39,7 +39,43 @@ export class HomePage {
       author: "Seneca",
       desc: "Roman Philosopher",
       img: "assets/seneca-avatar.jpg",
-    }
+    },
+    {
+      authorId: "CatoTheYounger",
+      author: "Cato",
+      desc: "Roman Senator",
+      img: "assets/cato-avatar.jpg",
+    },
+    {
+      authorId: "MusoniusRufus",
+      author: "Musonius Rufus",
+      desc: "Roman Philosopher",
+      img: "assets/musonius-rufus-avatar.jpg",
+    },
+    {
+      authorId: "Cleanthes",
+      author: "Cleanthes",
+      desc: "Greek philosopher",
+      img: "assets/cleanthes-avatar.jpg",
+    },
+    {
+      authorId: "Zeno",
+      author: "Zeno of Citium",
+      desc: "Greek philosopher",
+      img: "assets/cleanthes-avatar.jpg",
+    },
+    {
+      authorId: "Plato",
+      author: "Plato",
+      desc: "Greek philosopher",
+      img: "assets/plato-avatar.jpg",
+    },
+    {
+      authorId: "Epicurus",
+      author: "Epicurus",
+      desc: "Greek philosopher",
+      img: "assets/epicurus-avatar.jpg",
+    },
   ]
 
   quotes = [
@@ -270,6 +306,270 @@ export class HomePage {
     {
       authorId: "MarcusAurelius",
       quote: "The best revenge is not to do as they do."
+    },
+    {
+      authorId: "CatoTheYounger",
+      quote: "Bitter are the roots of study, but how sweet their fruit."
+    },
+    {
+      authorId: "CatoTheYounger",
+      quote: "Consider it the greatest of all virtues to restrain the tongue."
+    },
+    {
+      authorId: "CatoTheYounger",
+      quote: "In doing nothing men learn to do evil."
+    },
+    {
+      authorId: "CatoTheYounger",
+      quote: "Consider in silence whatever any one says: speech both conceals and reveals the inner soul of man."
+    },
+    {
+      authorId: "CatoTheYounger",
+      quote: "All have the gift of speech, but few are possessed of wisdom."
+    },
+    {
+      authorId: "CatoTheYounger",
+      quote: "Speak briefly and to the point."
+    },
+    {
+      authorId: "CatoTheYounger",
+      quote: "The best way to keep good acts in memory is to refresh them with new."
+    },
+    {
+      authorId: "CatoTheYounger",
+      quote: "Don't promise twice what you can do at once."
+    },
+    {
+      authorId: "CatoTheYounger",
+      quote: "Flee sloth; for the indolence of the soul is the decay of the body."
+    },
+    {
+      authorId: "CatoTheYounger",
+      quote: "The primary virtue is: hold your tongue; who knows how to keep quiet is close to God."
+    },
+    {
+      authorId: "CatoTheYounger",
+      quote: "An angry man opens his mouth and shuts his eyes."
+    },
+    {
+      authorId: "CatoTheYounger",
+      quote: "Old age isn't so bad when you consider the alternatives."
+    },
+    {
+      authorId: "MusoniusRufus",
+      quote: "If you accomplish something good with hard work, the labor passes quickly, but the good endures; if you do something shameful in pursuit of pleasure, the pleasure passes quickly, but the shame endures."
+    },
+    {
+      authorId: "MusoniusRufus",
+      quote: "In order to protect ourselves we must live like doctors and be continually treating ourselves with reason."
+    },
+    {
+      authorId: "MusoniusRufus",
+      quote: "The human being is born with an inclination toward virtue."
+    },
+    {
+      authorId: "MusoniusRufus",
+      quote: "It is not possible to live well today unless you treat it as your last day."
+    },
+    {
+      authorId: "MusoniusRufus",
+      quote: "To relax the mind is to lose it."
+    },
+    {
+      authorId: "MusoniusRufus",
+      quote: "You will earn the respect of all if you begin by earning the respect of yourself."
+    },
+    {
+      authorId: "MusoniusRufus",
+      quote: "Virtue is not simply theoretical knowledge, but it is practical application as well."
+    },
+    {
+      authorId: "MusoniusRufus",
+      quote: "We will train both soul and body when we accustom ourselves to cold, heat, thirst, hunger, scarcity of food, hardness of bed, abstaining from pleasures, and enduring pains."
+    },
+    {
+      authorId: "Cleanthes",
+      quote: "Conduct me, God, and you, O Destiny, wherever your decrees have fixed my station."
+    },
+    {
+      authorId: "Cleanthes",
+      quote: "He has his wish, whose wish can be to have what is enough."
+    },
+    {
+      authorId: "Cleanthes",
+      quote: "Ignorant men differ from beasts only in their figure."
+    },
+    {
+      authorId: "Cleanthes",
+      quote: "Lead me, Zeus, and you, Fate, wherever you have assigned me. I shall follow without hesitation; but even if I am disobedient and do not wish to, I shall follow no less surely."
+    },
+    {
+      authorId: "Cleanthes",
+      quote: "The Fates lead the willing, but drag the unwilling."
+    },
+    {
+      authorId: "Cleanthes",
+      quote: "The Fates guide the person who accepts them and hinder the person who resists them."
+    },
+    {
+      authorId: "Zeno",
+      quote: "Better to trip with the feet than with the tongue."
+    },
+    {
+      authorId: "Zeno",
+      quote: "Fate is the endless chain of causation, whereby things are; the reason or formula by which the world goes on."
+    },
+    {
+      authorId: "Zeno",
+      quote: "Happiness is a good flow of life."
+    },
+    {
+      authorId: "Zeno",
+      quote: "Man conquers the world by conquering himself."
+    },
+    {
+      authorId: "Zeno",
+      quote: "Nothing is more hostile to a firm grasp on knowledge than self-deception."
+    },
+    {
+      authorId: "Zeno",
+      quote: "Steel your sensibilities, so that life shall hurt you as little as possible."
+    },
+    {
+      authorId: "Zeno",
+      quote: "The goal of life is living in agreement with nature."
+    },
+    {
+      authorId: "Zeno",
+      quote: "The reason why we have two ears and only one mouth is that we may listen the more and talk the less."
+    },
+    {
+      authorId: "Zeno",
+      quote: "Wellbeing is attained by little and little, and nevertheless is no little thing itself."
+    },
+    {
+      authorId: "Plato",
+      quote: "We are what we repeatedly do. Excellence, then, is not an act, but a habit."
+    },
+    {
+      authorId: "Plato",
+      quote: "We can easily forgive a child who is afraid of the dark; the real tragedy of life is when men are afraid of the light"
+    },
+    {
+      authorId: "Plato",
+      quote: "Thinking - the talking of the soul with itself."
+    },
+    {
+      authorId: "Plato",
+      quote: "The first and greatest victory is to conquer yourself; to be conquered by yourself is of all things most shameful and vile."
+    },
+    {
+      authorId: "Plato",
+      quote: "If a man neglects education, he walks lame to the end of his life."
+    },
+    {
+      authorId: "Plato",
+      quote: "Books give a soul to the universe, wings to the mind, flight to the imagination, and life to everything."
+    },
+    {
+      authorId: "Plato",
+      quote: "Do not train a child to learn by force or harshness; but direct them to it by what amuses their minds."
+    },
+    {
+      authorId: "Plato",
+      quote: "Do not train a child to learn by force or harshness; but direct them to it by what amuses their minds."
+    },
+    {
+      authorId: "Plato",
+      quote: "And what, Socrates, is the food of the soul? Surely, I said, knowledge is the food of the soul."
+    },
+    {
+      authorId: "Plato",
+      quote: "The untrained mind keeps up a running commentary, labelling everything, judging everything. Best to ignore that commentary."
+    },
+    {
+      authorId: "Epicurus",
+      quote: "Do not spoil what you have by desiring what you have not; remember that what you now have was once among the things you only hoped for."
+    },
+    {
+      authorId: "Epicurus",
+      quote: "He who is not satisfied with a little is satisfied with nothing."
+    },
+    {
+      authorId: "Epicurus",
+      quote: "Why should I fear death? If I am, then death is not. If Death is, then I am not. Why should I fear that which can only exist when I do not?"
+    },
+    {
+      authorId: "Epicurus",
+      quote: "Death does not concern us, because as long as we exist, death is not here. And when it does come, we no longer exist."
+    },
+    {
+      authorId: "Epicurus",
+      quote: "The art of living well and the art of dying well are one."
+    },
+    {
+      authorId: "Epicurus",
+      quote: "I was not, I was, I am not, I care not."
+    },
+    {
+      authorId: "Epicurus",
+      quote: "He who has peace of mind disturbs neither himself nor another."
+    },
+    {
+      authorId: "Epicurus",
+      quote: "Do not spoil what you have by desiring what you have not."
+    },
+    {
+      authorId: "Epicurus",
+      quote: "Empty is the argument of the philosopher which does not relieve any human suffering."
+    },
+    {
+      authorId: "Epicurus",
+      quote: "Nothing is sufficient for the person who finds sufficiency too little."
+    },
+    {
+      authorId: "Epicurus",
+      quote: "Be moderate in order to taste the joys of life in abundance."
+    },
+    {
+      authorId: "Epicurus",
+      quote: "The greater the difficulty, the more the glory in surmounting it."
+    },
+    {
+      authorId: "Seneca",
+      quote: "Brave men rejoice in adversity, just as brave soldiers triumph in war."
+    },
+    {
+      authorId: "Seneca",
+      quote: "We must indulge the mind and from time to time allow it the leisure which is its food and strength."
+    },
+    {
+      authorId: "Seneca",
+      quote: "O how many noble deeds of women are lost in obscurity!"
+    },
+    {
+      authorId: "Seneca",
+      quote: "The more a mind takes in the more it expands."
+    },
+    {
+      authorId: "Seneca",
+      quote: "Religion is regarded by the ignorant as true, by the wise as false, and by the rulers as useful."
+    },
+    {
+      authorId: "Seneca",
+      quote: "When a man does not know what harbor he is making for, no wind is the right wind."
+    },
+    {
+      authorId: "Seneca",
+      quote: "The bravest sight in the world is to see a great man struggling against adversity."
+    },
+    {
+      authorId: "Seneca",
+      quote: "No matter how many men you kill, you can't kill your successor."
+    },
+    {
+      authorId: "Seneca",
+      quote: "A guilty person sometimes has the luck to escape detection, but never to feel sure of it."
     },
   ]
 
