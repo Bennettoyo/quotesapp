@@ -7,7 +7,7 @@ import * as _ from 'lodash';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
-  number = Math.floor(Math.random() * 10) + 1;
+  isModalOpen = false;
   slideOpts = {
     initialSlide: 0,
     speed: 300,
@@ -165,7 +165,7 @@ export class HomePage {
     },
     {
       authorId: "Epictetus",
-      quote: "Seek not the good in external things;seek it in yourselves."
+      quote: "Seek not the good in external things; seek it in yourselves."
     },
     {
       authorId: "Epictetus",
@@ -571,6 +571,254 @@ export class HomePage {
       authorId: "Seneca",
       quote: "A guilty person sometimes has the luck to escape detection, but never to feel sure of it."
     },
+    {
+      authorId: "MarcusAurelius",
+      quote: "You have power over your mind - not outside events. Realize this, and you will find strength."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Dwell on the beauty of life. Watch the stars, and see yourself running with them."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Everything we hear is an opinion, not a fact. Everything we see is a perspective, not the truth."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "If you are distressed by anything external, the pain is not due to the thing itself, but to your estimate of it; and this you have the power to revoke at any moment."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "When you arise in the morning think of what a privilege it is to be alive, to think, to enjoy, to love."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "It is not death that a man should fear, but he should fear never beginning to live."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Never let the future disturb you. You will meet it, if you have to, with the same weapons of reason which today arm you against the present."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "The first rule is to keep an untroubled spirit. The second is to look things in the face and know them for what they are."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Do not act as if you were going to live ten thousand years. Death hangs over you. While you live, while it is in your power, be good."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Here is a rule to remember in future, when anything tempts you to feel bitter: not 'This is misfortune,' but 'To bear this worthily is good fortune.'"
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Here is a rule to remember in future, when anything tempts you to feel bitter: not 'This is misfortune,' but 'To bear this worthily is good fortune.'"
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "How much time he gains who does not look to see what his neighbour says or does or thinks, but only at what he does himself, to make it just and holy."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "You always own the option of having no opinion. There is never any need to get worked up or to trouble your soul about things you can't control."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Perfection of character is this: to live each day as if it were your last, without frenzy, without apathy, without pretence."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Look back over the past, with its changing empires that rose and fell, and you can foresee the future too."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "A man's worth is no greater than the worth of his ambitions."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "A man's worth is no greater than the worth of his ambitions."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Never esteem anything as of advantage to you that will make you break your word or lose your self-respect."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Your days are numbered. Use them to throw open the windows of your soul to the sun. If you do not, the sun will soon set, and you with it."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Receive without conceit, release without struggle."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Life is neither good or evil, but only a place for good and evil."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "A person's worth is measured by the worth of what he values."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "If any man despises me, that is his problem. My only concern is not doing or saying anything deserving of contempt."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Whatever anyone does or says, I must be emerald and keep my colour."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "The things you think about determine the quality of your mind."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Humans have come into being for the sake of each other, so either teach them, or learn to bear them."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Do what you will. Even if you tear yourself apart, most people will continue doing the same things."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "If someone can prove me wrong and show me my mistake in any thought or action, I shall gladly change. I seek the truth."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "It never ceases to amaze me: we all love ourselves more than other people, but care more about their opinion than our own."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Do not act as if you had ten thousand years to throw away. Death stands at your elbow. Be good for something while you live and it is in your power."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Accept whatever comes to you woven in the pattern of your destiny, for what could more aptly fit your needs?"
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Whoever does wrong, wrongs himself; whoever does injustice, does it to himself, making himself evil."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Regain your senses, call yourself back, and once again wake up. Now that you realize that only dreams were troubling you, view this 'reality' as you view your dreams."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Regain your senses, call yourself back, and once again wake up. Now that you realize that only dreams were troubling you, view this 'reality' as you view your dreams."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "The happiness of those who want to be popular depends on others."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "The happiness of those who want to be popular depends on others."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "The happiness of those who seek pleasure fluctuates with moods outside their control."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "The happiness of the wise grows out of their own free acts."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "The memory of everything is very soon overwhelmed in time."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Nowhere can man find a quieter or more untroubled retreat than in his own soul."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Observe always that everything is the result of change, and get used to thinking that there is nothing Nature loves so well as to change existing forms and make new ones like them."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Confine yourself to the present."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Death smiles at us all; all we can do is smile back."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Choose not to be harmed—and you won't feel harmed. Don't feel harmed—and you haven't been."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Be like the cliff against which the waves continually break; but it stands firm and tames the fury of the water around it."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Concentrate every minute like a Roman— like a man— on doing what's in front of you with precise and genuine seriousness, tenderly, willingly, with justice. And on freeing yourself from all other distractions."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "No one can lose either the past or the future - how could anyone be deprived of what he does not possess?"
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "The art of living is more like wrestling than dancing."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Misfortune nobly born is good fortune."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "A man must stand erect, not be kept erect by others."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Do not disturb yourself by picturing your life as a whole."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Every living organism is fulfilled when it follows the right path for its own nature."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "I was once a fortunate man but at some point fortune abandoned me. But true good fortune is what you make for yourself. Good fortune: good character, good intentions, and good actions"
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "What we cannot bear removes us from life; what remains can be borne."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "No man is happy who does not think himself so."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Life is opinion."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "The blazing fire makes flames and brightness out of everything thrown into it."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "All things fade and quickly turn to myth."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "All things of the body stream away like a river, all things of the mind are dreams and delusion; life is warfare, and a visit to a strange land; the only lasting fame is oblivion."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "At dawn, when you have trouble getting out of bed, tell yourself: 'I have to go to work as a human being.'"
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Be tolerant with others and strict with yourself."
+    },
+    {
+      authorId: "MarcusAurelius",
+      quote: "Everything - a horse, a vine - is created for some duty... For what task, then, were you yourself created?"
+    },
   ]
 
   shuffledCollection = this.shuffle(this.quotes);
@@ -584,5 +832,9 @@ export class HomePage {
       return mergedObject;
     })
     return _.shuffle(matchedArray);
+  }
+
+  setOpen(isOpen: boolean) {
+    this.isModalOpen = isOpen;
   }
 }

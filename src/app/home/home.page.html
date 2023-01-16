@@ -1,35 +1,61 @@
-<ion-header>
-  <ion-toolbar color="dark">
-    <ion-title>
-      Enchiridion
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-<ion-content color="dark">
-  <ion-slides pager="true" [options]="slideOpts">
-    <ion-slide *ngFor="let item of shuffledCollection">
-      <ion-item color="dark" class="author">
-        <ion-avatar slot="start">
-          <img alt="Silhouette of a person's head" src="{{item.img}}" />
-        </ion-avatar>
-        <ion-label>
-          <h2>{{item.author}}</h2>
-          <p class="desc">{{item.desc}}</p>
-        </ion-label>
-      </ion-item>
-      <div class="quote-container">
-        <p>"{{item.quote}}"</p>
-      </div>
-    </ion-slide>
-  </ion-slides>
-</ion-content>
-<!-- <ion-footer>
-  <ion-toolbar>
-    <div>
+<ion-menu contentId="main-content">
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-title>Settings</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-content color="dark" class="ion-padding">
+    Authors
+  </ion-content>
+</ion-menu>
+<div class="ion-page" id="main-content">
+  <ion-header>
+    <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+        <ion-menu-button></ion-menu-button>
+      </ion-buttons>
       <ion-title>
-        <span>All Quotes</span>
-        <span>1 of 716</span>
+        Enchiridion
       </ion-title>
-    </div>
-  </ion-toolbar>
-</ion-footer> -->
+    </ion-toolbar>
+  </ion-header>
+  <ion-content color="dark">
+    <ion-slides pager="true" [options]="slideOpts">
+      <ion-slide *ngFor="let item of shuffledCollection">
+        <ion-item color="dark" class="author">
+          <ion-avatar slot="start" (click)="setOpen(true)">
+            <img alt="Silhouette of a person's head" src="{{item.img}}" />
+          </ion-avatar>
+          <ion-label>
+            <h2>{{item.author}}</h2>
+            <p class="desc">{{item.desc}}</p>
+          </ion-label>
+        </ion-item>
+        <div class="quote-container">
+          <p>"{{item.quote}}"</p>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </ion-content>
+</div>
+
+<ion-modal [isOpen]="isModalOpen">
+  <ng-template>
+    <ion-header>
+      <ion-toolbar color="dark">
+        <ion-title>Modal</ion-title>
+        <ion-buttons slot="end">
+          <ion-button (click)="setOpen(false)">Close</ion-button>
+        </ion-buttons>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content color="dark" class="ion-padding">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum quidem recusandae ducimus quos
+        reprehenderit. Veniam, molestias quos, dolorum consequuntur nisi deserunt omnis id illo sit cum qui.
+        Eaque,
+        dicta.
+      </p>
+    </ion-content>
+  </ng-template>
+</ion-modal>
