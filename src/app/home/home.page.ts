@@ -8,6 +8,11 @@ import * as _ from 'lodash';
 })
 export class HomePage {
   isModalOpen = false;
+  currentAuthor = {
+    author: "",
+    desc: "",
+    img: ""
+  };
   slideOpts = {
     initialSlide: 0,
     speed: 300,
@@ -834,7 +839,14 @@ export class HomePage {
     return _.shuffle(matchedArray);
   }
 
-  setOpen(isOpen: boolean) {
+  setOpen(isOpen: boolean, item?: any) {
     this.isModalOpen = isOpen;
+    if (item) {
+      this.currentAuthor = {
+        author: item.author,
+        desc: item.desc,
+        img: item.img
+      }
+    }
   }
 }

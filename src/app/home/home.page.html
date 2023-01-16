@@ -23,7 +23,7 @@
     <ion-slides pager="true" [options]="slideOpts">
       <ion-slide *ngFor="let item of shuffledCollection">
         <ion-item color="dark" class="author">
-          <ion-avatar slot="start" (click)="setOpen(true)">
+          <ion-avatar slot="start" (click)="setOpen(true, item)">
             <img alt="Silhouette of a person's head" src="{{item.img}}" />
           </ion-avatar>
           <ion-label>
@@ -43,18 +43,16 @@
   <ng-template>
     <ion-header>
       <ion-toolbar color="dark">
-        <ion-title>Modal</ion-title>
+        <ion-title>{{currentAuthor?.author}}</ion-title>
         <ion-buttons slot="end">
           <ion-button (click)="setOpen(false)">Close</ion-button>
         </ion-buttons>
       </ion-toolbar>
     </ion-header>
     <ion-content color="dark" class="ion-padding">
+      <img src="{{currentAuthor?.img}}" alt="">
       <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni illum quidem recusandae ducimus quos
-        reprehenderit. Veniam, molestias quos, dolorum consequuntur nisi deserunt omnis id illo sit cum qui.
-        Eaque,
-        dicta.
+        {{currentAuthor?.desc}}
       </p>
     </ion-content>
   </ng-template>
