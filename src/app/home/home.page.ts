@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { IonSlides } from '@ionic/angular';
 import * as _ from 'lodash';
 
 @Component({
@@ -7,10 +8,12 @@ import * as _ from 'lodash';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  @ViewChild('slides', { static: true }) slides!: IonSlides;
   isModalOpen = false;
   currentAuthor = {
     author: "",
     desc: "",
+    info: "",
     img: ""
   };
   slideOpts = {
@@ -25,61 +28,81 @@ export class HomePage {
       authorId: "MarcusAurelius",
       author: "Marcus Aurelius",
       desc: "Roman Emperor",
+      info: ["Marcus Aurelius Antoninus was Roman emperor from 161 to 180 AD and a Stoic philosopher.", "He was the last of the rulers known as the Five Good Emperors, and the last emperor of the Pax Romana, an age of relative peace, calmness and stability for the Roman Empire lasting from 27 BC to 180 AD."],
       img: "assets/marcus-aurelius-avatar.jpg",
+      showQuotes: true
     },
     {
       authorId: "MiyamotoMusashi",
       author: "Miyamoto Musashi",
       desc: "Ronin",
+      info: ["Miyamoto Musashi, also known as Shinmen Takezō, Miyamoto Bennosuke or, by his Buddhist name, Niten Dōraku, was a Japanese swordsman, philosopher, strategist, writer and rōnin.", "He became renowned through stories of his unique double-bladed swordsmanship and undefeated record in his 61 duels."],
       img: "assets/miyamoto-musashi-avatar.jpg",
+      showQuotes: true
     },
     {
       authorId: "Epictetus",
       author: "Epictetus",
       desc: "Slave Philosopher",
+      info: ["Epictetus was a Greek Stoic philosopher. He was born into slavery at Hierapolis, Phrygia and lived in Rome until his banishment, when he went to Nicopolis in northwestern Greece for the rest of his life.", "His teachings were written down and published by his pupil Arrian in his Discourses and Enchiridion."],
       img: "assets/epictetus-avatar.jpg",
+      showQuotes: true
     },
     {
       authorId: "Seneca",
       author: "Seneca",
       desc: "Roman Philosopher",
+      info: ["Lucius Annaeus Seneca the Younger, usually known mononymously as Seneca, was a Stoic philosopher of Ancient Rome, a statesman, dramatist, and, in one work, satirist, from the post-Augustan age of Latin literature."],
       img: "assets/seneca-avatar.jpg",
+      showQuotes: true
     },
     {
       authorId: "CatoTheYounger",
       author: "Cato",
       desc: "Roman Senator",
+      info: ["Marcus Porcius Cato 'Uticensis', also known as Cato the Younger, was an influential conservative Roman senator during the late Republic.", "His conservative principles were focused on the preservation of what he saw as old Roman values in decline."],
       img: "assets/cato-avatar.jpg",
+      showQuotes: true
     },
     {
       authorId: "MusoniusRufus",
       author: "Musonius Rufus",
       desc: "Roman Philosopher",
+      info: ["Gaius Musonius Rufus was a Roman Stoic philosopher of the 1st century AD.", "He taught philosophy in Rome during the reign of Nero and so was sent into exile in 65 AD, returning to Rome only under Galba."],
       img: "assets/musonius-rufus-avatar.jpg",
+      showQuotes: true
     },
     {
       authorId: "Cleanthes",
       author: "Cleanthes",
       desc: "Greek philosopher",
+      info: ["Cleanthes, of Assos, was a Greek Stoic philosopher and boxer who was the successor to Zeno of Citium as the second head of the Stoic school in Athens.", "Originally a boxer, he came to Athens where he took up philosophy, listening to Zeno's lectures. He supported himself by working as a water-carrier at night."],
       img: "assets/cleanthes-avatar.jpg",
+      showQuotes: true
     },
     {
       authorId: "Zeno",
       author: "Zeno of Citium",
       desc: "Greek philosopher",
+      info: ["Zeno of Citium was a Hellenistic philosopher from Citium, Cyprus. Zeno was the founder of the Stoic school of philosophy, which he taught in Athens from about 300 BC."],
       img: "assets/cleanthes-avatar.jpg",
+      showQuotes: true
     },
     {
       authorId: "Plato",
       author: "Plato",
       desc: "Greek philosopher",
+      info: ["Plato was a Ancient Greek philosopher born in Athens during the Classical period in Ancient Greece.", "He founded the Platonist school of thought and the Academy, the first institution of higher learning on the European continent."],
       img: "assets/plato-avatar.jpg",
+      showQuotes: true
     },
     {
       authorId: "Epicurus",
       author: "Epicurus",
       desc: "Greek philosopher",
+      info: ["Epicurus was an ancient Greek philosopher and sage who founded Epicureanism, a highly influential school of philosophy.", "He was born on the Greek island of Samos to Athenian parents."],
       img: "assets/epicurus-avatar.jpg",
+      showQuotes: true
     },
   ]
 
@@ -478,14 +501,6 @@ export class HomePage {
     },
     {
       authorId: "Plato",
-      quote: "Do not train a child to learn by force or harshness; but direct them to it by what amuses their minds."
-    },
-    {
-      authorId: "Plato",
-      quote: "Do not train a child to learn by force or harshness; but direct them to it by what amuses their minds."
-    },
-    {
-      authorId: "Plato",
       quote: "And what, Socrates, is the food of the soul? Surely, I said, knowledge is the food of the soul."
     },
     {
@@ -824,8 +839,9 @@ export class HomePage {
       authorId: "MarcusAurelius",
       quote: "Everything - a horse, a vine - is created for some duty... For what task, then, were you yourself created?"
     },
-  ]
+  ];
 
+  originalQuotes = [...this.quotes];
   shuffledCollection = this.shuffle(this.quotes);
 
   constructor() { }
@@ -839,12 +855,31 @@ export class HomePage {
     return _.shuffle(matchedArray);
   }
 
+  showOrHideQuotes(showQuotes: boolean, authorId: string) {
+    this.quotes = this.originalQuotes;
+    if (showQuotes == false) {
+      this.quotes = this.quotes.filter(quote => quote.authorId !== authorId);
+    }
+    this.authors.forEach(author => {
+      if (author.showQuotes == false) {
+        this.quotes = this.quotes.filter(quote => quote.authorId !== author.authorId);
+      }
+    });
+    if (showQuotes == true) {
+      this.quotes = this.originalQuotes;
+      this.quotes = this.quotes.filter(quote => quote.authorId == authorId);
+    }
+    this.shuffledCollection = [...this.shuffle(this.quotes)];
+    this.slides.slideTo(0);
+  }
+
   setOpen(isOpen: boolean, item?: any) {
     this.isModalOpen = isOpen;
     if (item) {
       this.currentAuthor = {
         author: item.author,
         desc: item.desc,
+        info: item.info,
         img: item.img
       }
     }

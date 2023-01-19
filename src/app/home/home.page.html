@@ -6,6 +6,13 @@
   </ion-header>
   <ion-content color="dark" class="ion-padding">
     Authors
+    <ng-container *ngFor="let item of authors">
+      <ion-item color="dark">
+        <ion-checkbox (ngModelChange)="showOrHideQuotes($event, item.authorId)" [(ngModel)]="item.showQuotes"
+          slot="start"></ion-checkbox>
+        <ion-label>{{item.author}}</ion-label>
+      </ion-item>
+    </ng-container>
   </ion-content>
 </ion-menu>
 <div class="ion-page" id="main-content">
@@ -20,7 +27,7 @@
     </ion-toolbar>
   </ion-header>
   <ion-content color="dark">
-    <ion-slides pager="true" [options]="slideOpts">
+    <ion-slides #slides pager="true" [options]="slideOpts">
       <ion-slide *ngFor="let item of shuffledCollection">
         <ion-item color="dark" class="author">
           <ion-avatar slot="start" (click)="setOpen(true, item)">
@@ -43,16 +50,16 @@
   <ng-template>
     <ion-header>
       <ion-toolbar color="dark">
-        <ion-title>{{currentAuthor?.author}}</ion-title>
+        <ion-title>{{currentAuthor.author}}</ion-title>
         <ion-buttons slot="end">
           <ion-button (click)="setOpen(false)">Close</ion-button>
         </ion-buttons>
       </ion-toolbar>
     </ion-header>
     <ion-content color="dark" class="ion-padding">
-      <img src="{{currentAuthor?.img}}" alt="">
-      <p>
-        {{currentAuthor?.desc}}
+      <img class="author-desc-img" src="{{currentAuthor.img}}" alt="">
+      <p *ngFor="let paragraph of currentAuthor.info" class="author-info">
+        {{paragraph}}
       </p>
     </ion-content>
   </ng-template>

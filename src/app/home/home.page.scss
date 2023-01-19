@@ -12,6 +12,7 @@
 
   h2 {
     font-weight: bold;
+    font-family: 'Roboto', sans-serif;
   }
 
   .desc {
@@ -20,9 +21,20 @@
   }
 }
 
-ion-avatar { 
-  width: 60px;  
-  height: 60px;  
+ion-avatar {
+  width: 60px;
+  height: 60px;
+}
+
+.author-desc-img {
+  margin: auto;
+  display: flex;
+  border-radius: 20px;
+}
+
+.author-info {
+  font-size: 16px;
+  // text-align: center;
 }
 
 .swiper-slide img {
@@ -38,6 +50,12 @@ ion-avatar {
   padding: 40px;
   padding-top: 100px;
   font-size: 30px;
+
+  p {
+    word-spacing: 1px;
+    line-height: 35px;
+    font-weight: 100 !important;
+  }
 }
 
 .swiper-wrapper {
@@ -54,6 +72,6 @@ ion-slides {
   overflow-y: scroll;
 }
 
-// .swiper-slide {
-//   flex-direction: column;
-// }
+ion-menu {
+  --width: 100%;
+}
