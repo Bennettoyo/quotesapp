@@ -5,17 +5,10 @@
     </ion-toolbar>
   </ion-header>
   <ion-content color="dark" class="ion-padding">
-    Authors
-    <ng-container *ngFor="let item of authors">
-      <ion-item color="dark">
-        <ion-checkbox (ngModelChange)="showOrHideQuotes($event, item.authorId)" [(ngModel)]="item.showQuotes"
-          slot="start"></ion-checkbox>
-        <ion-label>{{item.author}}</ion-label>
-      </ion-item>
-    </ng-container>
+    <span [routerLink]="[ '/', 'authors' ]" routerLinkActive="active">Authors</span>
   </ion-content>
 </ion-menu>
-<div class="ion-page" id="main-content">
+<ion-content #pageTop class="ion-page" id="main-content">
   <ion-header>
     <ion-toolbar color="dark">
       <ion-buttons slot="start">
@@ -27,7 +20,7 @@
     </ion-toolbar>
   </ion-header>
   <ion-content color="dark">
-    <ion-slides #slides pager="true" [options]="slideOpts">
+    <ion-slides #slides pager="true" [options]="slideOpts" (ionSlideDidChange)="updateHeight()">
       <ion-slide *ngFor="let item of shuffledCollection">
         <ion-item color="dark" class="author">
           <ion-avatar slot="start" (click)="setOpen(true, item)">
@@ -44,16 +37,14 @@
       </ion-slide>
     </ion-slides>
   </ion-content>
-</div>
+</ion-content>
 
-<ion-modal [isOpen]="isModalOpen">
+<ion-modal [initialBreakpoint]="0.95" [breakpoints]="[0, 0.95]" [isOpen]="isModalOpen"
+  (ionModalDidDismiss)="setOpen(false)">
   <ng-template>
     <ion-header>
       <ion-toolbar color="dark">
         <ion-title>{{currentAuthor.author}}</ion-title>
-        <ion-buttons slot="end">
-          <ion-button (click)="setOpen(false)">Close</ion-button>
-        </ion-buttons>
       </ion-toolbar>
     </ion-header>
     <ion-content color="dark" class="ion-padding">
