@@ -27,7 +27,7 @@ export class HomePage {
   };
   isModalOpen = false;
   quotes: quote[] = this.dataService.quotes;
-  authors: author[] = this.dataService.getAuthors();
+  authors: author[] = this.dataService.authors;
   originalQuotes = [...this.quotes];
   shuffledCollection = this.shuffle(this.quotes);
 
@@ -35,12 +35,12 @@ export class HomePage {
   }
 
   ngOnInit() {
-    this.filterAuthors();
-    this.dataService.authorsSubject.subscribe(
-      (data) => {
-        this.filterAuthors();
-      }
-    );
+    // this.filterAuthors();
+    // this.dataService.authorsSubject.subscribe(
+    //   (data) => {
+    //     this.filterAuthors();
+    //   }
+    // );
   }
 
   updateHeight() {
