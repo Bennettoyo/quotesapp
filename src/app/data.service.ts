@@ -861,27 +861,11 @@ export class DataService {
     },
     {
       authorId: "Cicero",
-      quote: "Friendship improves happiness, and abates misery, by doubling our joys, and dividing our grief."
-    },
-    {
-      authorId: "Cicero",
       quote: "If we are not ashamed to think it, we should not be ashamed to say it."
     },
     {
       authorId: "Cicero",
-      quote: "To study philosophy is nothing but to prepare one's self to die."
-    },
-    {
-      authorId: "Cicero",
-      quote: "The life of the dead is placed on the memories of the living. The love you gave in life keeps people alive beyond their time. Anyone who was given love will always live on in another's heart."
-    },
-    {
-      authorId: "Cicero",
       quote: "It is not by muscle, speed, or physical dexterity that great things are achieved, but by reflection, force of character, and judgment."
-    },
-    {
-      authorId: "Cicero",
-      quote: "What is morally wrong can never be advantageous, even when it enables you to make some gain that you believe to be to your advantage. The mere act of believing that some wrongful course of action constitutes an advantage is pernicious."
     },
     {
       authorId: "Cicero",
@@ -897,10 +881,6 @@ export class DataService {
     },
     {
       authorId: "Cicero",
-      quote: "A happy life consists in tranquility of mind."
-    },
-    {
-      authorId: "Cicero",
       quote: "I am not ashamed to confess I am ignorant of what I do not know."
     },
     {
@@ -913,23 +893,11 @@ export class DataService {
     },
     {
       authorId: "Cicero",
-      quote: "Never injure a friend, even in jest."
-    },
-    {
-      authorId: "Cicero",
       quote: "It is the peculiar quality of a fool to perceive the faults of others and to forget his own."
     },
     {
       authorId: "Cicero",
-      quote: "We are bound by the law, so that we may be free."
-    },
-    {
-      authorId: "Cicero",
       quote: "Diseases of the soul are more dangerous and more numerous than those of the body."
-    },
-    {
-      authorId: "Cicero",
-      quote: "We must not only obtain Wisdom: we must enjoy her."
     },
     {
       authorId: "Cicero",
@@ -949,18 +917,6 @@ export class DataService {
     },
     {
       authorId: "Cicero",
-      quote: "A mental stain can neither be blotted out by the passage of time nor washed away by any waters."
-    },
-    {
-      authorId: "Cicero",
-      quote: "I have always been of the opinion that unpopularity earned by doing what is right is not unpopularity at all, but glory."
-    },
-    {
-      authorId: "Cicero",
-      quote: "Books: our unfailing companions."
-    },
-    {
-      authorId: "Cicero",
       quote: "The mind becomes accustomed to things by the habitual sight of them, and neither wonders nor inquires about the reasons for things it sees all the time."
     },
     {
@@ -968,36 +924,12 @@ export class DataService {
       quote: "Silence is one of the great arts of conversation."
     },
     {
-      authorId: "Cicero",
-      quote: "The wise are instructed by reason, average minds by experience, the stupid by necessity and the brute by instinct."
-    },
-    {
-      authorId: "Cicero",
-      quote: "O philosophy, life's guide! O searcher-out of virtue and expeller of vices! What could we and every age of men have been without thee? Thou hast produced cities; thou hast called men scattered about into the social enjoyment of life."
-    },
-    {
-      authorId: "Cicero",
-      quote: "No power on earth, if it labours beneath the burden of fear, can possibly be strong enough to survive."
-    },
-    {
       authorId: "Socrates",
       quote: "The unexamined life is not worth living."
     },
     {
       authorId: "Socrates",
-      quote: "Be kind, for everyone you meet is fighting a hard battle."
-    },
-    {
-      authorId: "Socrates",
-      quote: "Strong minds discuss ideas, average minds discuss events, weak minds discuss people."
-    },
-    {
-      authorId: "Socrates",
       quote: "To find yourself, think for yourself."
-    },
-    {
-      authorId: "Socrates",
-      quote: "By all means marry; if you get a good wife, you'll become happy; if you get a bad one, you'll become a philosopher."
     },
     {
       authorId: "Socrates",
@@ -1101,18 +1033,6 @@ export class DataService {
     },
     {
       authorId: "Diogenes",
-      quote: "It is not that I am mad, it is only that my head is different from yours."
-    },
-    {
-      authorId: "Diogenes",
-      quote: "Alexander the Great found the philosopher looking attentively at a pile of human bones. Diogenes explained, 'I am searching for the bones of your father but cannot distinguish them from those of a slave..'"
-    },
-    {
-      authorId: "Diogenes",
-      quote: "Of what use is a philosopher who doesn't hurt anybody's feelings?"
-    },
-    {
-      authorId: "Diogenes",
       quote: "It is the privilege of the Gods to want nothing, and of Godlike men to want little."
     },
     {
@@ -1121,31 +1041,11 @@ export class DataService {
     },
     {
       authorId: "Diogenes",
-      quote: "It takes a wise man to discover a wise man."
-    },
-    {
-      authorId: "Diogenes",
-      quote: "Blushing is the color of virtue."
-    },
-    {
-      authorId: "Diogenes",
       quote: "I have nothing to ask but that you would remove to the other side, that you may not, by intercepting the sunshine, take from me what you cannot give."
     },
     {
       authorId: "Diogenes",
-      quote: "Poverty is a virtue which one can teach oneself."
-    },
-    {
-      authorId: "Diogenes",
       quote: "No man is hurt but by himself."
-    },
-    {
-      authorId: "Diogenes",
-      quote: "When people laughed at him because he walked backward beneath the portico, he said to them: 'Aren't you ashamed, you who walk backward along the whole path of existence, and blame me for walking backward along the path of the promenade?'"
-    },
-    {
-      authorId: "Diogenes",
-      quote: "I am Diogenes the Dog. I nuzzle the kind, bark at the greedy and bite scoundrels."
     },
     {
       authorId: "Diogenes",
@@ -1161,10 +1061,6 @@ export class DataService {
     },
     {
       authorId: "Diogenes",
-      quote: "We come into the world alone and we die alone. Why, in life, should we be any less alone?"
-    },
-    {
-      authorId: "Diogenes",
       quote: "If only it was as easy to banish hunger by rubbing the belly as it is to masturbate."
     },
     {
@@ -1173,15 +1069,7 @@ export class DataService {
     },
     {
       authorId: "Diogenes",
-      quote: "The most beautiful thing in the world is freedom of speech."
-    },
-    {
-      authorId: "Diogenes",
       quote: "You will become a teacher of yourself when for the same things that you blame others, you also blame yourself."
-    },
-    {
-      authorId: "Diogenes",
-      quote: "Why not whip the teacher when the pupil misbehaves?"
     },
     {
       authorId: "Diogenes",
@@ -1190,10 +1078,6 @@ export class DataService {
     {
       authorId: "Diogenes",
       quote: "Even if I am but a pretender to wisdom, that in itself is philosophy."
-    },
-    {
-      authorId: "Diogenes",
-      quote: "Self-taught poverty is a help toward philosophy, for the things which philosophy attempts to teach by reasoning, poverty forces us to practice."
     },
     {
       authorId: "Diogenes",
@@ -1206,14 +1090,6 @@ export class DataService {
     {
       authorId: "Diogenes",
       quote: "We are more curious about the meaning of dreams than about things we see when awake."
-    },
-    {
-      authorId: "Diogenes",
-      quote: "He once begged alms of a statue, and, when asked why he did so, replied, 'To get practice in being refused.'"
-    },
-    {
-      authorId: "Diogenes",
-      quote: "When Alexander the Great addressed him with greetings, and asked if he wanted anything, Diogenes replied 'Yes, stand a little out of my sunshine.'"
     },
     {
       authorId: "Diogenes",
