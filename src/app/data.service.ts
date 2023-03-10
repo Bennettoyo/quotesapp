@@ -497,14 +497,6 @@ export class DataService {
     },
     {
       authorId: "Plato",
-      quote: "If a man neglects education, he walks lame to the end of his life."
-    },
-    {
-      authorId: "Plato",
-      quote: "And what, Socrates, is the food of the soul? Surely, I said, knowledge is the food of the soul."
-    },
-    {
-      authorId: "Plato",
       quote: "The untrained mind keeps up a running commentary, labelling everything, judging everything. Best to ignore that commentary. Don't argue or resist, just ignore. Deprived of attention and interest, this voice gets quieter and quieter and eventually just shuts up."
     },
     {
@@ -909,10 +901,6 @@ export class DataService {
     },
     {
       authorId: "Cicero",
-      quote: "To be rather than to seem."
-    },
-    {
-      authorId: "Cicero",
       quote: "He only employs his passion who can make no use of his reason."
     },
     {
@@ -934,10 +922,6 @@ export class DataService {
     {
       authorId: "Socrates",
       quote: "He who is not contented with what he has, would not be contented with what he would like to have."
-    },
-    {
-      authorId: "Socrates",
-      quote: "Be slow to fall into friendship, but when you are in, continue firm and constant."
     },
     {
       authorId: "Socrates",
@@ -1013,10 +997,6 @@ export class DataService {
     },
     {
       authorId: "Socrates",
-      quote: "Those who are hardest to love need it the most."
-    },
-    {
-      authorId: "Socrates",
       quote: "Be of good cheer about death, and know this of a truth, that no evil can happen to a good man, either in life or after death."
     },
     {
@@ -1041,10 +1021,6 @@ export class DataService {
     },
     {
       authorId: "Diogenes",
-      quote: "I have nothing to ask but that you would remove to the other side, that you may not, by intercepting the sunshine, take from me what you cannot give."
-    },
-    {
-      authorId: "Diogenes",
       quote: "No man is hurt but by himself."
     },
     {
@@ -1058,10 +1034,6 @@ export class DataService {
     {
       authorId: "Diogenes",
       quote: "We come into the world alone and we die alone. Why, in life, should we be any less alone?"
-    },
-    {
-      authorId: "Diogenes",
-      quote: "If only it was as easy to banish hunger by rubbing the belly as it is to masturbate."
     },
     {
       authorId: "Diogenes",
@@ -1089,11 +1061,95 @@ export class DataService {
     },
     {
       authorId: "Diogenes",
-      quote: "We are more curious about the meaning of dreams than about things we see when awake."
+      quote: "Man is the most intelligent of the animals - and the most silly."
     },
     {
-      authorId: "Diogenes",
-      quote: "Man is the most intelligent of the animals - and the most silly."
+      authorId: "Epictetus",
+      quote: "Amor Fati."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "But it is within your power to avoid disappointment, by directing your desires to things that are rightfully yours to obtain and control."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "It is a measure of the effort we are prepared to expend to guard against deception when accuracy is at a premium."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "Some things are up to us and some are not up to us. Our opinions are up to us, and our impulses, desires, aversions - in short, whatever is our own doing. Our bodies are not up to us, nor are our possessions, our reputations, or our public offices."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "Two elements are combined in our creation, the body, which we have in common with the beasts; and reason and good judgement, which we share with the gods."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "We must endure, and toil without complaining."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "Practice saying to every harsh appearance,1 You are an appearance, and in no manner what you appear to be."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "there is but one way to freedom - to despise what is not in our power."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "You see, then, that it is necessary for you to become a student, that creature which every one laughs at, if you really desire to make an examination of your judgements.But this, as you are quite aware, is not the work of a single hour or day."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "True peace is characterized by nothing so much as steadiness and imperturbability."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "Diogenes says somewhere that one way to guarantee freedom is to be ready to die."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "Remember that you must behave as at a banquet. Is anything brought round to you? Put out your hand and take a moderate share. Does it pass by you? Do not stop it. Is it not yet come? Do not yearn in desire toward it, but wait till it reaches you. So with regard to children, wife, office, riches; and you will some time or other be worthy to feast with the gods. And if you do not so much as take the things which are set before you, but are able even to forego them, then you will not only be worthy to feast with the gods, but to rule with them also."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "Remember that you are an actor in a drama of such sort as the author chooses, - if short, then in a short one; if long, then in a long one. If it be his pleasure that you should enact a poor man, see that you act it well; or a cripple, or a ruler, or a private citizen. For this is your business, to act well the given part; but to choose it, belongs to another."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "This is the road that leads to liberty, the only road that delivers us from slavery: finally to be able to say, with meaning: Lead me, Zeus, lead me, Destiny, to the goal I was long ago assigned."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "Consider at what price you sell your integrity; but please, for God's sake, don't sell it cheap."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "Consider at what price you sell your integrity; but please, for God's sake, don't sell it cheap."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "such is Death, a greater change, from what now is, not to what is not, but to what is not now. 'Shall I then no longer be?' Not so; thou wilt be; but something different, of which the World now hath need. For thou too wert born not when thou chosest, but when the World had need of thee."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "When the soul cries out, it is a sign that we have arrived at a necessary, mature stage of self-reflection. The secret is not to get stuck there dithering or wringing your hands, but to move forward by resolving to heal yourself."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "If you intend to improve, throw away such thoughts as these: if I neglect my affairs, I shall not have the means of living: unless I chastise my slave, he will be bad. For it is better to die of hunger and so to be released from grief and fear than to live in abundance with perturbation; and it is better for your slave to be bad than for you to be unhappy."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "'It's only my leg you will chain, not even God can conquer my will.' 'I will throw you into prison.' 'Correction - it is my body you will throw there."
+    },
+    {
+      authorId: "Epictetus",
+      quote: "Life is a piece of music, and you're supposed to be dancing"
+    },
+    {
+      authorId: "Epictetus",
+      quote: "If you learn that someone is speaking ill of you, don't try to defend yourself against the rumours; respond instead with, 'Yes, and he doesn't know the half of it, because he could have said more"
     },
   ];
 
