@@ -9,12 +9,15 @@ import { DataService } from '../data.service';
   styleUrls: ['./authors.component.scss'],
 })
 export class AuthorsComponent implements OnInit {
-  authors: author[] = this.dataService.getAuthors();
+  authors: author[] = [];
 
   constructor(private location: Location, private dataService: DataService) { }
 
   ngOnInit() {
-
+    this.dataService.authorsSubject.subscribe((authors: author[]) => {
+      this.authors = authors;
+    });
+    this.dataService.getAuthors();
   }
 
   back(): void {
@@ -22,13 +25,16 @@ export class AuthorsComponent implements OnInit {
   }
 
   showOrHideQuotes(showQuotes: boolean, authorId: string) {
-    this.dataService.authors = this.authors.map((author) => {
+    this.authors = this.authors.map((author) => {
       if (author.authorId == authorId) {
         author.showQuotes = showQuotes;
       }
       return author;
     });
-    this.dataService.setAuthorsAsLocalStorage(this.dataService.authors);
+
+    this.dataService.setAuthorsAsLocalStorage(this.authors);
     this.dataService.authorsSubject.next(this.dataService.authors);
+    this.dataService.getQuotes();
+
   }
 }

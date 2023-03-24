@@ -14,7 +14,8 @@ export class DataService {
       desc: "Roman Emperor",
       info: ["Marcus Aurelius Antoninus was Roman emperor from 161 to 180 AD and a Stoic philosopher.", "He was the last of the rulers known as the Five Good Emperors, and the last emperor of the Pax Romana, an age of relative peace, calmness and stability for the Roman Empire lasting from 27 BC to 180 AD."],
       img: "assets/marcus-aurelius-avatar.jpg",
-      showQuotes: true
+      showQuotes: false,
+      initialBreakpoint: "0.70"
     },
     {
       authorId: "MiyamotoMusashi",
@@ -22,7 +23,8 @@ export class DataService {
       desc: "Ronin",
       info: ["Miyamoto Musashi, also known as Shinmen Takezō, Miyamoto Bennosuke or, by his Buddhist name, Niten Dōraku, was a Japanese swordsman, philosopher, strategist, writer and rōnin.", "He became renowned through stories of his unique double-bladed swordsmanship and undefeated record in his 61 duels."],
       img: "assets/miyamoto-musashi-avatar.jpg",
-      showQuotes: true
+      showQuotes: true,
+      initialBreakpoint: "0.70"
     },
     {
       authorId: "Epictetus",
@@ -30,7 +32,8 @@ export class DataService {
       desc: "Slave Philosopher",
       info: ["Epictetus was a Greek Stoic philosopher. He was born into slavery at Hierapolis, Phrygia and lived in Rome until his banishment, when he went to Nicopolis in northwestern Greece for the rest of his life.", "His teachings were written down and published by his pupil Arrian in his Discourses and Enchiridion."],
       img: "assets/epictetus-avatar.jpg",
-      showQuotes: true
+      showQuotes: true,
+      initialBreakpoint: "0.70"
     },
     {
       authorId: "Seneca",
@@ -38,7 +41,8 @@ export class DataService {
       desc: "Roman Philosopher",
       info: ["Lucius Annaeus Seneca the Younger, usually known mononymously as Seneca, was a Stoic philosopher of Ancient Rome, a statesman, dramatist, and, in one work, satirist, from the post-Augustan age of Latin literature."],
       img: "assets/seneca-avatar.jpg",
-      showQuotes: true
+      showQuotes: true,
+      initialBreakpoint: "0.60"
     },
     {
       authorId: "CatoTheYounger",
@@ -46,7 +50,8 @@ export class DataService {
       desc: "Roman Senator",
       info: ["Marcus Porcius Cato 'Uticensis', also known as Cato the Younger, was an influential conservative Roman senator during the late Republic.", "His conservative principles were focused on the preservation of what he saw as old Roman values in decline."],
       img: "assets/cato-avatar.jpg",
-      showQuotes: true
+      showQuotes: true,
+      initialBreakpoint: "0.70"
     },
     {
       authorId: "MusoniusRufus",
@@ -54,7 +59,8 @@ export class DataService {
       desc: "Roman Philosopher",
       info: ["Gaius Musonius Rufus was a Roman Stoic philosopher of the 1st century AD.", "He taught philosophy in Rome during the reign of Nero and so was sent into exile in 65 AD, returning to Rome only under Galba."],
       img: "assets/musonius-rufus-avatar.jpg",
-      showQuotes: true
+      showQuotes: true,
+      initialBreakpoint: "0.60"
     },
     {
       authorId: "Cleanthes",
@@ -62,7 +68,8 @@ export class DataService {
       desc: "Greek philosopher",
       info: ["Cleanthes, of Assos, was a Greek Stoic philosopher and boxer who was the successor to Zeno of Citium as the second head of the Stoic school in Athens.", "Originally a boxer, he came to Athens where he took up philosophy, listening to Zeno's lectures. He supported himself by working as a water-carrier at night."],
       img: "assets/cleanthes-avatar.jpg",
-      showQuotes: true
+      showQuotes: true,
+      initialBreakpoint: "0.70"
     },
     {
       authorId: "Zeno",
@@ -70,7 +77,8 @@ export class DataService {
       desc: "Greek philosopher",
       info: ["Zeno of Citium was a Hellenistic philosopher from Citium, Cyprus. Zeno was the founder of the Stoic school of philosophy, which he taught in Athens from about 300 BC."],
       img: "assets/zeno-avatar.jpg",
-      showQuotes: true
+      showQuotes: true,
+      initialBreakpoint: "0.60"
     },
     {
       authorId: "Plato",
@@ -78,7 +86,8 @@ export class DataService {
       desc: "Greek philosopher",
       info: ["Plato was a Ancient Greek philosopher born in Athens during the Classical period in Ancient Greece.", "He founded the Platonist school of thought and the Academy, the first institution of higher learning on the European continent."],
       img: "assets/plato-avatar.jpg",
-      showQuotes: true
+      showQuotes: true,
+      initialBreakpoint: "0.70"
     },
     {
       authorId: "Epicurus",
@@ -86,7 +95,8 @@ export class DataService {
       desc: "Greek philosopher",
       info: ["Epicurus was an ancient Greek philosopher and sage who founded Epicureanism, a highly influential school of philosophy.", "He was born on the Greek island of Samos to Athenian parents."],
       img: "assets/epicurus-avatar.jpg",
-      showQuotes: true
+      showQuotes: true,
+      initialBreakpoint: "0.60"
     },
     {
       authorId: "Cicero",
@@ -94,7 +104,8 @@ export class DataService {
       desc: "Roman Statesman",
       info: ["Marcus Tullius Cicero was a Roman statesman, lawyer, scholar, philosopher, and academic skeptic.", "He tried to uphold optimate principles during the political crises that led to the establishment of the Roman Empire."],
       img: "assets/cicero-avatar.jpg",
-      showQuotes: true
+      showQuotes: false,
+      initialBreakpoint: "0.70"
     },
     {
       authorId: "Socrates",
@@ -102,7 +113,8 @@ export class DataService {
       desc: "Greek Philosopher",
       info: ["Socrates was a Greek philosopher from Athens who is credited as the founder of Western philosophy and among the first moral philosophers of the ethical tradition of thought."],
       img: "assets/socrates-avatar.jpg",
-      showQuotes: true
+      showQuotes: true,
+      initialBreakpoint: "0.60"
     },
     {
       authorId: "Diogenes",
@@ -110,7 +122,8 @@ export class DataService {
       desc: "Greek Philosopher",
       info: ["Diogenes, also known as Diogenes the Cynic or Diogenes of Sinope, was a Greek philosopher and one of the founders of Cynicism.", "He was born in Sinope, an Ionian colony on the Black Sea coast of Anatolia in 412 or 404 BC and died at Corinth in 323 BC. Diogenes was a controversial figure."],
       img: "assets/diogenes-avatar.jpg",
-      showQuotes: true
+      showQuotes: false,
+      initialBreakpoint: "0.70"
     },
   ];
 
@@ -781,7 +794,7 @@ export class DataService {
     },
     {
       authorId: "MarcusAurelius",
-      quote: "Concentrate every minute like a Roman— like a man— on doing what's in front of you with precise and genuine seriousness, tenderly, willingly, with justice. And on freeing yourself from all other distractions."
+      quote: "Concentrate every minute like a Roman — like a man — on doing what's in front of you with precise and genuine seriousness, tenderly, willingly, with justice. And on freeing yourself from all other distractions."
     },
     {
       authorId: "MarcusAurelius",
@@ -985,10 +998,6 @@ export class DataService {
     },
     {
       authorId: "Socrates",
-      quote: "My friend...care for your psyche...know thyself, for once we know ourselves, we may learn how to care for ourselves."
-    },
-    {
-      authorId: "Socrates",
       quote: "If you want to be a good saddler, saddle the worst horse; for if you can tame one, you can tame all."
     },
     {
@@ -1065,19 +1074,11 @@ export class DataService {
     },
     {
       authorId: "Epictetus",
-      quote: "Amor Fati."
-    },
-    {
-      authorId: "Epictetus",
       quote: "But it is within your power to avoid disappointment, by directing your desires to things that are rightfully yours to obtain and control."
     },
     {
       authorId: "Epictetus",
       quote: "It is a measure of the effort we are prepared to expend to guard against deception when accuracy is at a premium."
-    },
-    {
-      authorId: "Epictetus",
-      quote: "Some things are up to us and some are not up to us. Our opinions are up to us, and our impulses, desires, aversions - in short, whatever is our own doing. Our bodies are not up to us, nor are our possessions, our reputations, or our public offices."
     },
     {
       authorId: "Epictetus",
@@ -1089,15 +1090,11 @@ export class DataService {
     },
     {
       authorId: "Epictetus",
-      quote: "Practice saying to every harsh appearance,1 You are an appearance, and in no manner what you appear to be."
+      quote: "Practice saying to every harsh appearance, You are an appearance, and in no manner what you appear to be."
     },
     {
       authorId: "Epictetus",
       quote: "there is but one way to freedom - to despise what is not in our power."
-    },
-    {
-      authorId: "Epictetus",
-      quote: "You see, then, that it is necessary for you to become a student, that creature which every one laughs at, if you really desire to make an examination of your judgements.But this, as you are quite aware, is not the work of a single hour or day."
     },
     {
       authorId: "Epictetus",
@@ -1106,14 +1103,6 @@ export class DataService {
     {
       authorId: "Epictetus",
       quote: "Diogenes says somewhere that one way to guarantee freedom is to be ready to die."
-    },
-    {
-      authorId: "Epictetus",
-      quote: "Remember that you must behave as at a banquet. Is anything brought round to you? Put out your hand and take a moderate share. Does it pass by you? Do not stop it. Is it not yet come? Do not yearn in desire toward it, but wait till it reaches you. So with regard to children, wife, office, riches; and you will some time or other be worthy to feast with the gods. And if you do not so much as take the things which are set before you, but are able even to forego them, then you will not only be worthy to feast with the gods, but to rule with them also."
-    },
-    {
-      authorId: "Epictetus",
-      quote: "Remember that you are an actor in a drama of such sort as the author chooses, - if short, then in a short one; if long, then in a long one. If it be his pleasure that you should enact a poor man, see that you act it well; or a cripple, or a ruler, or a private citizen. For this is your business, to act well the given part; but to choose it, belongs to another."
     },
     {
       authorId: "Epictetus",
@@ -1129,15 +1118,7 @@ export class DataService {
     },
     {
       authorId: "Epictetus",
-      quote: "such is Death, a greater change, from what now is, not to what is not, but to what is not now. 'Shall I then no longer be?' Not so; thou wilt be; but something different, of which the World now hath need. For thou too wert born not when thou chosest, but when the World had need of thee."
-    },
-    {
-      authorId: "Epictetus",
       quote: "When the soul cries out, it is a sign that we have arrived at a necessary, mature stage of self-reflection. The secret is not to get stuck there dithering or wringing your hands, but to move forward by resolving to heal yourself."
-    },
-    {
-      authorId: "Epictetus",
-      quote: "If you intend to improve, throw away such thoughts as these: if I neglect my affairs, I shall not have the means of living: unless I chastise my slave, he will be bad. For it is better to die of hunger and so to be released from grief and fear than to live in abundance with perturbation; and it is better for your slave to be bad than for you to be unhappy."
     },
     {
       authorId: "Epictetus",
@@ -1156,29 +1137,23 @@ export class DataService {
   quotesSubject: Subject<quote[]> = new Subject();
   authorsSubject: Subject<author[]> = new Subject();
 
-  constructor() { }
+  constructor() {
+    let authors: any = localStorage.getItem("authors");
+    if (authors) {
+      this.authors = JSON.parse(authors);
+    }
+  }
 
   setAuthorsAsLocalStorage(authors: author[]) {
     localStorage.removeItem("authors");
     localStorage.setItem("authors", JSON.stringify(authors));
   }
 
-  setQuotes(quotes: quote[]) {
-    this.quotesSubject.next(quotes);
-  }
-
-  setAuthor(authors: author[]) {
-    this.authorsSubject.next(authors);
-  }
-
   getAuthors() {
-    let authors: any = localStorage.getItem("authors");
-    if (authors) {
-      authors = JSON.parse(authors);
-    } else {
-      authors = this.authors;
-    }
-    return authors;
+    this.authorsSubject.next(this.authors);
   }
 
+  getQuotes() {
+    this.quotesSubject.next(this.quotes);
+  }
 }

@@ -1,4 +1,4 @@
-import { Component, ViewChild } from '@angular/core';
+import { Component, Renderer2, ViewChild } from '@angular/core';
 import { IonSlides, IonContent } from '@ionic/angular';
 import * as _ from 'lodash';
 import { DataService } from '../data.service';
@@ -17,7 +17,8 @@ export class HomePage {
     author: "",
     desc: "",
     info: "",
-    img: ""
+    img: "",
+    initialBreakpoint: "",
   };
   slideOpts = {
     initialSlide: 0,
@@ -26,39 +27,37 @@ export class HomePage {
     autoHeight: true,
   };
   isModalOpen = false;
-  quotes: quote[] = this.dataService.quotes;
-  authors: author[] = this.dataService.authors;
-  originalQuotes = [...this.quotes];
-  shuffledCollection = this.shuffle(this.quotes);
+  quotes: quote[] = [];
+  authors: author[] = [];
+  shuffledCollection: any[] = [];
 
-  constructor(private dataService: DataService) {
+  constructor(private dataService: DataService, private renderer: Renderer2) {
   }
 
   ngOnInit() {
-    // this.filterAuthors();
-    // this.dataService.authorsSubject.subscribe(
-    //   (data) => {
-    //     this.filterAuthors();
-    //   }
-    // );
+    this.dataService.authorsSubject.subscribe((authors: author[]) => {
+      this.authors = authors;
+      this.resetSlides();
+    });
+    this.dataService.quotesSubject.subscribe((quotes: quote[]) => {
+      this.quotes = this.shuffle(quotes);
+      this.shuffledCollection = this.shuffle(this.quotes);
+      this.resetSlides();
+    })
+    this.dataService.getAuthors();
+    this.dataService.getQuotes();
   }
 
   updateHeight() {
     this.pageTop.scrollToTop(400);
   }
 
-  filterAuthors() {
-    this.quotes = this.originalQuotes;
-    this.authors.map((author) => {
-      if (author.showQuotes == false) {
-        this.quotes = this.quotes.filter(quote => quote.authorId !== author.authorId);
-      }
-    });
-    this.shuffledCollection = this.shuffle(this.quotes);
+  resetSlides() {
+    this.slides.slideTo(0);
   }
 
-  shuffle(array: any) {
-    let matchedArray = array.map((quote: any) => {
+  shuffle(quoteArray: any) {
+    let matchedArray = quoteArray.map((quote: any) => {
       let author = this.authors.filter(author => author.authorId == quote.authorId);
       const mergedObject = { ...author[0], ...quote };
       return mergedObject;
@@ -73,7 +72,8 @@ export class HomePage {
         author: item.author,
         desc: item.desc,
         info: item.info,
-        img: item.img
+        img: item.img,
+        initialBreakpoint: item.initialBreakpoint,
       }
     }
   }

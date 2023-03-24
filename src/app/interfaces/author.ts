@@ -4,5 +4,6 @@ export interface author {
     desc: string,
     info: string[],
     img: string,
-    showQuotes: boolean
+    showQuotes: boolean,
+    initialBreakpoint?: string
 }
