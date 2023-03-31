@@ -14,8 +14,17 @@ export class DataService {
       desc: "Roman Emperor",
       info: ["Marcus Aurelius Antoninus was Roman emperor from 161 to 180 AD and a Stoic philosopher.", "He was the last of the rulers known as the Five Good Emperors, and the last emperor of the Pax Romana, an age of relative peace, calmness and stability for the Roman Empire lasting from 27 BC to 180 AD."],
       img: "assets/marcus-aurelius-avatar.jpg",
-      showQuotes: false,
+      showQuotes: true,
       initialBreakpoint: "0.70"
+    },
+    {
+      authorId: "HajimeNoIppo",
+      author: "Hajime No Ippo",
+      desc: "Boxer",
+      info: ["He is a Featherweight boxer from the Kamogawa Boxing Gym, the former JBC Featherweight Champion, and 'unofficial champion' of the OPBF."],
+      img: "assets/ippo-avatar.jpg",
+      showQuotes: true,
+      initialBreakpoint: "0.60"
     },
     {
       authorId: "MiyamotoMusashi",
@@ -104,7 +113,7 @@ export class DataService {
       desc: "Roman Statesman",
       info: ["Marcus Tullius Cicero was a Roman statesman, lawyer, scholar, philosopher, and academic skeptic.", "He tried to uphold optimate principles during the political crises that led to the establishment of the Roman Empire."],
       img: "assets/cicero-avatar.jpg",
-      showQuotes: false,
+      showQuotes: true,
       initialBreakpoint: "0.70"
     },
     {
@@ -122,12 +131,81 @@ export class DataService {
       desc: "Greek Philosopher",
       info: ["Diogenes, also known as Diogenes the Cynic or Diogenes of Sinope, was a Greek philosopher and one of the founders of Cynicism.", "He was born in Sinope, an Ionian colony on the Black Sea coast of Anatolia in 412 or 404 BC and died at Corinth in 323 BC. Diogenes was a controversial figure."],
       img: "assets/diogenes-avatar.jpg",
-      showQuotes: false,
+      showQuotes: true,
       initialBreakpoint: "0.70"
+    },
+    {
+      authorId: "England",
+      author: "England",
+      desc: "An Anglo Saxon Country",
+      info: ["England is a country that is part of the United Kingdom. It shares land borders with Wales to its west and Scotland to its north."],
+      img: "assets/england.jpg",
+      showQuotes: true,
+      initialBreakpoint: "0.60"
     },
   ];
 
   quotes: quote[] = [
+    {
+      authorId: "HajimeNoIppo",
+      quote: "No matter how much talent you have, if you aren't the best, you're nothing because there can only be one king. If you're in his shadow, then history won't see you."
+    },
+    {
+      authorId: "HajimeNoIppo",
+      quote: "Run until you can't run anymore, and then run again. Constant effort is life's greatest shortcut."
+    },
+    {
+      authorId: "HajimeNoIppo",
+      quote: "Sometimes, no matter what kind of effort you put in, it just doesn't really pay off."
+    },
+    {
+      authorId: "HajimeNoIppo",
+      quote: "There are times when working hard may not be enough. But those who succeed worked hard."
+    },
+    {
+      authorId: "HajimeNoIppo",
+      quote: "Why are you punching? What are you chasing? You should already know the answer to that. To become strong."
+    },
+    {
+      authorId: "HajimeNoIppo",
+      quote: "The brighter they shine, the darker their shadow grows."
+    },
+    {
+      authorId: "HajimeNoIppo",
+      quote: "People with talent often have the wrong impression that things will go as they think."
+    },
+    {
+      authorId: "HajimeNoIppo",
+      quote: "The difference between the novice and the master is that the master has failed more times than the novice has tried."
+    },
+    {
+      authorId: "HajimeNoIppo",
+      quote: "Until I understand what true strength is, I'm the challenger! So I'll always stand up."
+    },
+    {
+      authorId: "HajimeNoIppo",
+      quote: "Everyone around you is doing so well. You'll be easily forgotten if you idle around for too long."
+    },
+    {
+      authorId: "HajimeNoIppo",
+      quote: "The reason we train so hard in the first place is so we can make it home in one piece."
+    },
+    {
+      authorId: "HajimeNoIppo",
+      quote: "As long as I get up there's a chance!"
+    },
+    {
+      authorId: "HajimeNoIppo",
+      quote: "If having no talent makes it okay to give up then what was the point in ever trying?!"
+    },
+    {
+      authorId: "HajimeNoIppo",
+      quote: "Life's greatest shortcut is constant effort."
+    },
+    {
+      authorId: "HajimeNoIppo",
+      quote: "We each have our own lives. But everyone is the hero of their own story. And as the star of the show, we all have to go on our own adventure."
+    },
     {
       authorId: "MarcusAurelius",
       quote: "The happiness of your life depends upon the quality of your thoughts."
@@ -135,6 +213,130 @@ export class DataService {
     {
       authorId: "MiyamotoMusashi",
       quote: "Accept everything just the way it is."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "I want to lead an important life. I want to do it because I was born a human being."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "Hold on to your life and make it honest and brave."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "Think what you like. There are people who die by remaining alive and others who gain life by dying."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "The line between life and death is not thicker than an eyelid."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "To him, any place could serve as home - more than that: wherever he happened to be was the universe."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "Whether people were great or not, there was not much variety in their inner life experience. Any difference lay merely in how they dealt with common human weaknesses."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "If the talents I was born with are the right ones, I may someday achieve my goal. If not, I may go through life being as stupid as I am now."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "Danger was the grindstone on which the swordsman whetted his spirit. Enemies were teachers in disguise."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "Those who love seek a philosophy and, because of this, are fond of solitude."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "I'm still an amateur. But the world's full of people who don't seem to be as good as I am."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "A wanderer with no ideal, no sense of gratitude for his independence, is no more than a beggar! The difference lies inside the heart!"
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "We human beings all look up at the same moon, but there are many roads we may travel to reach the top of the peak nearest to it."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "The human mouth is the gateway to catastrophe."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "The human mouth is the gateway to catastrophe."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "I want to dedicate myself to training and discipline. I want to spend every moment of every day working to improve myself."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "Great character is forged through hardships."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "Sincerity, even if it speaks with a stutter, will sound eloquent when inspired."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "Every act is an expression of one's self."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "Not only must a warrior be strong with his bow, but he must have a heart full of pity for all living creatures."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "Don't yield! Keep up your courage! The same sun looks down on all of us!"
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "A serious student is concerned with training his mind and disciplining his spirit than with developing martial arts."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "Instead of wanting to be like this or that, make yourself into a silent, immovable giant. That's what a mountain is."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "Don't waste your time trying to impress people. If you become the sort of man people respect, they'll respect you, without your doing anything."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "The truth of the scholar, alone in his study, does no always accord with what the world at large considers true."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "True courage knows fear."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "It's interesting isn't it? Being in the world."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "A wise man who cultivates wisdom may sometimes drown in it."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "You're safer out in the open than you are crouching in the woodshed listening for footsteps and going crazy."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "It's not just my body, I'm cold inside. Not disciplined properly. That's what it is. I still long to cling to warm flesh, like a baby, and I give in too quickly to sentimentality."
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "The world is always full of the sound of waves. The little fishes, abandoning themselves to the waves, dance and sing, and play, but who knows the heart of the sea, a hundred feet down? Who knows its depth?"
+    },
+    {
+      authorId: "MiyamotoMusashi",
+      quote: "If you become self-conscious about the proper way to drink, you won't enjoy the tea. When you use a sword, you can't let your body become too tense. That would break your harmony between the sword and your spirit, right?"
     },
     {
       authorId: "MiyamotoMusashi",
@@ -1131,6 +1333,378 @@ export class DataService {
     {
       authorId: "Epictetus",
       quote: "If you learn that someone is speaking ill of you, don't try to defend yourself against the rumours; respond instead with, 'Yes, and he doesn't know the half of it, because he could have said more"
+    },
+    {
+      authorId: "England",
+      quote: "A little learning is a dangerous thing."
+    },
+    {
+      authorId: "England",
+      quote: "An apple a day keeps the doctor away."
+    },
+    {
+      authorId: "England",
+      quote: "It is a poor workman who blames his tools."
+    },
+    {
+      authorId: "England",
+      quote: "You can lead a horse to water, but you can't make him drink."
+    },
+    {
+      authorId: "England",
+      quote: "You can't make an omelet without breaking some eggs."
+    },
+    {
+      authorId: "England",
+      quote: "All that glitters is not gold."
+    },
+    {
+      authorId: "England",
+      quote: "Beggars can't be choosers."
+    },
+    {
+      authorId: "England",
+      quote: "Beggars can't be choosers."
+    },
+    {
+      authorId: "England",
+      quote: "A bird in the hand is worth two in the bush."
+    },
+    {
+      authorId: "England",
+      quote: "Better safe than sorry."
+    },
+    {
+      authorId: "England",
+      quote: "When in Rome, do as the Romans do."
+    },
+    {
+      authorId: "England",
+      quote: "Don't count your chickens before they hatch."
+    },
+    {
+      authorId: "England",
+      quote: "Every cloud has a silver lining."
+    },
+    {
+      authorId: "England",
+      quote: "A journey of a thousand miles begins with a single step."
+    },
+    {
+      authorId: "England",
+      quote: "Necessity is the mother of invention."
+    },
+    {
+      authorId: "England",
+      quote: "Two wrongs don't make a right."
+    },
+    {
+      authorId: "England",
+      quote: "Rome wasn't built in a day."
+    },
+    {
+      authorId: "England",
+      quote: "Time waits for no one."
+    },
+    {
+      authorId: "England",
+      quote: "Too many cooks spoil the broth."
+    },
+    {
+      authorId: "England",
+      quote: "When there's smoke, there's fire."
+    },
+    {
+      authorId: "England",
+      quote: "A dog is a man's best friend."
+    },
+    {
+      authorId: "England",
+      quote: "Action speaks louder than words."
+    },
+    {
+      authorId: "England",
+      quote: "A fool and his money are soon parted."
+    },
+    {
+      authorId: "England",
+      quote: "A jack of all trades is master of none."
+    },
+    {
+      authorId: "England",
+      quote: "A leopard doesn't change its spots."
+    },
+    {
+      authorId: "England",
+      quote: "All is well that ends well."
+    },
+    {
+      authorId: "England",
+      quote: "An empty vessel makes much noise."
+    },
+    {
+      authorId: "England",
+      quote: "An idle brain is devil's workshop."
+    },
+    {
+      authorId: "England",
+      quote: "A rolling stone gathers no moss."
+    },
+    {
+      authorId: "England",
+      quote: "As you sow, so you shall reap."
+    },
+    {
+      authorId: "England",
+      quote: "A thing begun is half done."
+    },
+    {
+      authorId: "England",
+      quote: "A tree is known by its fruit."
+    },
+    {
+      authorId: "England",
+      quote: "Barking dogs seldom bite."
+    },
+    {
+      authorId: "England",
+      quote: "Better late than never."
+    },
+    {
+      authorId: "England",
+      quote: "Cowards die many times before their death."
+    },
+    {
+      authorId: "England",
+      quote: "Different strokes for different folks."
+    },
+    {
+      authorId: "England",
+      quote: "Don't bite the hand that feeds you."
+    },
+    {
+      authorId: "England",
+      quote: "Don't cast pearls before swine."
+    },
+    {
+      authorId: "England",
+      quote: "Cross the bridge when you come to it."
+    },
+    {
+      authorId: "England",
+      quote: "Don't judge a book by its cover."
+    },
+    {
+      authorId: "England",
+      quote: "The early bird catches the worm."
+    },
+    {
+      authorId: "England",
+      quote: "Every dog has his day."
+    },
+    {
+      authorId: "England",
+      quote: "Every horse thinks its own pack is heaviest."
+    },
+    {
+      authorId: "England",
+      quote: "Familiarity breeds contempt."
+    },
+    {
+      authorId: "England",
+      quote: "Fools rush in where angels fear to tread."
+    },
+    {
+      authorId: "England",
+      quote: "Fortune favors the brave."
+    },
+    {
+      authorId: "England",
+      quote: "Get out while the going is good."
+    },
+    {
+      authorId: "England",
+      quote: "God helps those who help themselves."
+    },
+    {
+      authorId: "England",
+      quote: "God helps those who help themselves."
+    },
+    {
+      authorId: "England",
+      quote: "Home is where the heart is."
+    },
+    {
+      authorId: "England",
+      quote: "Honesty is the best policy."
+    },
+    {
+      authorId: "England",
+      quote: "Hope for the best, but prepare for the worst."
+    },
+    {
+      authorId: "England",
+      quote: "If you play with fire, you'll get burned."
+    },
+    {
+      authorId: "England",
+      quote: "If you want peace, prepare for war."
+    },
+    {
+      authorId: "England",
+      quote: "Imitation is the sincerest form of flattery."
+    },
+    {
+      authorId: "England",
+      quote: "It's better to be safe than sorry."
+    },
+    {
+      authorId: "England",
+      quote: "It's never too late to mend."
+    },
+    {
+      authorId: "England",
+      quote: "It takes two to make a quarrel."
+    },
+    {
+      authorId: "England",
+      quote: "Laughter is the best medicine."
+    },
+    {
+      authorId: "England",
+      quote: "Learn to walk before you run."
+    },
+    {
+      authorId: "England",
+      quote: "Let sleeping dogs lie."
+    },
+    {
+      authorId: "England",
+      quote: "Let sleeping dogs lie."
+    },
+    {
+      authorId: "England",
+      quote: "Look before you leap."
+    },
+    {
+      authorId: "England",
+      quote: "Make hay while the sun shines."
+    },
+    {
+      authorId: "England",
+      quote: "Money doesn't grow on trees."
+    },
+    {
+      authorId: "England",
+      quote: "Never put off until tomorrow what you can do today."
+    },
+    {
+      authorId: "England",
+      quote: "Night brings counsel."
+    },
+    {
+      authorId: "England",
+      quote: "No gain without pain."
+    },
+    {
+      authorId: "England",
+      quote: "Politeness costs little but yields much."
+    },
+    {
+      authorId: "England",
+      quote: "Practice makes perfect."
+    },
+    {
+      authorId: "England",
+      quote: "Practice what you preach."
+    },
+    {
+      authorId: "England",
+      quote: "Silence is half consent."
+    },
+    {
+      authorId: "England",
+      quote: "Slow and steady wins the race."
+    },
+    {
+      authorId: "England",
+      quote: "Smooth seas do not make skillful sailors."
+    },
+    {
+      authorId: "England",
+      quote: "Still water runs deep."
+    },
+    {
+      authorId: "England",
+      quote: "Strike while the iron is hot."
+    },
+    {
+      authorId: "England",
+      quote: "The only free cheese is in the mousetrap."
+    },
+    {
+      authorId: "England",
+      quote: "There are many paths to the top of the mountain, but the view is always the same."
+    },
+    {
+      authorId: "England",
+      quote: "There is no time like the present."
+    },
+    {
+      authorId: "England",
+      quote: "There is truth in wine."
+    },
+    {
+      authorId: "England",
+      quote: "The road to hell is paved with good intentions."
+    },
+    {
+      authorId: "England",
+      quote: "The tongue is but three inches long, yet it can kill a man six feet tall."
+    },
+    {
+      authorId: "England",
+      quote: "Time and tide wait for no man."
+    },
+    {
+      authorId: "England",
+      quote: "Where there's a will, there's a way."
+    },
+    {
+      authorId: "England",
+      quote: "While the cat's away, the mice will play."
+    },
+    {
+      authorId: "England",
+      quote: "Words must be weighed, not counted."
+    },
+    {
+      authorId: "England",
+      quote: "Hunger drives the wolf out of the wood."
+    },
+    {
+      authorId: "England",
+      quote: "A house divided cannot stand."
+    },
+    {
+      authorId: "England",
+      quote: "Give a man a fish and you feed him for a day; teach a man to fish and you feed him for a lifetime."
+    },
+    {
+      authorId: "England",
+      quote: "Corporations have neither bodies to be punished nor souls to be damned."
+    },
+    {
+      authorId: "England",
+      quote: "One law for the rich and another for the poor."
+    },
+    {
+      authorId: "England",
+      quote: "It's no use crying over spilt milk."
+    },
+    {
+      authorId: "England",
+      quote: "Forgive and forget."
     },
   ];
 
