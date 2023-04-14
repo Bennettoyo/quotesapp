@@ -1,6 +1,6 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { Observable, of, Subject } from 'rxjs';
-import { author } from './interfaces/author';
+import { author, authorCategoryEnum } from './interfaces/author';
 import { quote } from './interfaces/quote';
 
 @Injectable({
@@ -12,6 +12,7 @@ export class DataService {
       authorId: "MarcusAurelius",
       author: "Marcus Aurelius",
       desc: "Roman Emperor",
+      category: authorCategoryEnum.ancientPhilosopher,
       info: ["Marcus Aurelius Antoninus was Roman emperor from 161 to 180 AD and a Stoic philosopher.", "He was the last of the rulers known as the Five Good Emperors, and the last emperor of the Pax Romana, an age of relative peace, calmness and stability for the Roman Empire lasting from 27 BC to 180 AD."],
       img: "assets/marcus-aurelius-avatar.jpg",
       showQuotes: true,
@@ -21,6 +22,7 @@ export class DataService {
       authorId: "HajimeNoIppo",
       author: "Hajime No Ippo",
       desc: "Boxer",
+      category: authorCategoryEnum.show,
       info: ["He is a Featherweight boxer from the Kamogawa Boxing Gym, the former JBC Featherweight Champion, and 'unofficial champion' of the OPBF."],
       img: "assets/ippo-avatar.jpg",
       showQuotes: true,
@@ -30,6 +32,7 @@ export class DataService {
       authorId: "MiyamotoMusashi",
       author: "Miyamoto Musashi",
       desc: "Ronin",
+      category: authorCategoryEnum.philosopher,
       info: ["Miyamoto Musashi, also known as Shinmen Takezō, Miyamoto Bennosuke or, by his Buddhist name, Niten Dōraku, was a Japanese swordsman, philosopher, strategist, writer and rōnin.", "He became renowned through stories of his unique double-bladed swordsmanship and undefeated record in his 61 duels."],
       img: "assets/miyamoto-musashi-avatar.jpg",
       showQuotes: true,
@@ -39,6 +42,7 @@ export class DataService {
       authorId: "Epictetus",
       author: "Epictetus",
       desc: "Slave Philosopher",
+      category: authorCategoryEnum.ancientPhilosopher,
       info: ["Epictetus was a Greek Stoic philosopher. He was born into slavery at Hierapolis, Phrygia and lived in Rome until his banishment, when he went to Nicopolis in northwestern Greece for the rest of his life.", "His teachings were written down and published by his pupil Arrian in his Discourses and Enchiridion."],
       img: "assets/epictetus-avatar.jpg",
       showQuotes: true,
@@ -48,6 +52,7 @@ export class DataService {
       authorId: "Seneca",
       author: "Seneca",
       desc: "Roman Philosopher",
+      category: authorCategoryEnum.ancientPhilosopher,
       info: ["Lucius Annaeus Seneca the Younger, usually known mononymously as Seneca, was a Stoic philosopher of Ancient Rome, a statesman, dramatist, and, in one work, satirist, from the post-Augustan age of Latin literature."],
       img: "assets/seneca-avatar.jpg",
       showQuotes: true,
@@ -57,6 +62,7 @@ export class DataService {
       authorId: "CatoTheYounger",
       author: "Cato",
       desc: "Roman Senator",
+      category: authorCategoryEnum.ancientPhilosopher,
       info: ["Marcus Porcius Cato 'Uticensis', also known as Cato the Younger, was an influential conservative Roman senator during the late Republic.", "His conservative principles were focused on the preservation of what he saw as old Roman values in decline."],
       img: "assets/cato-avatar.jpg",
       showQuotes: true,
@@ -66,6 +72,7 @@ export class DataService {
       authorId: "MusoniusRufus",
       author: "Musonius Rufus",
       desc: "Roman Philosopher",
+      category: authorCategoryEnum.ancientPhilosopher,
       info: ["Gaius Musonius Rufus was a Roman Stoic philosopher of the 1st century AD.", "He taught philosophy in Rome during the reign of Nero and so was sent into exile in 65 AD, returning to Rome only under Galba."],
       img: "assets/musonius-rufus-avatar.jpg",
       showQuotes: true,
@@ -75,6 +82,7 @@ export class DataService {
       authorId: "Cleanthes",
       author: "Cleanthes",
       desc: "Greek philosopher",
+      category: authorCategoryEnum.ancientPhilosopher,
       info: ["Cleanthes, of Assos, was a Greek Stoic philosopher and boxer who was the successor to Zeno of Citium as the second head of the Stoic school in Athens.", "Originally a boxer, he came to Athens where he took up philosophy, listening to Zeno's lectures. He supported himself by working as a water-carrier at night."],
       img: "assets/cleanthes-avatar.jpg",
       showQuotes: true,
@@ -84,6 +92,7 @@ export class DataService {
       authorId: "Zeno",
       author: "Zeno of Citium",
       desc: "Greek philosopher",
+      category: authorCategoryEnum.ancientPhilosopher,
       info: ["Zeno of Citium was a Hellenistic philosopher from Citium, Cyprus. Zeno was the founder of the Stoic school of philosophy, which he taught in Athens from about 300 BC."],
       img: "assets/zeno-avatar.jpg",
       showQuotes: true,
@@ -93,6 +102,7 @@ export class DataService {
       authorId: "Plato",
       author: "Plato",
       desc: "Greek philosopher",
+      category: authorCategoryEnum.ancientPhilosopher,
       info: ["Plato was a Ancient Greek philosopher born in Athens during the Classical period in Ancient Greece.", "He founded the Platonist school of thought and the Academy, the first institution of higher learning on the European continent."],
       img: "assets/plato-avatar.jpg",
       showQuotes: true,
@@ -102,6 +112,7 @@ export class DataService {
       authorId: "Epicurus",
       author: "Epicurus",
       desc: "Greek philosopher",
+      category: authorCategoryEnum.ancientPhilosopher,
       info: ["Epicurus was an ancient Greek philosopher and sage who founded Epicureanism, a highly influential school of philosophy.", "He was born on the Greek island of Samos to Athenian parents."],
       img: "assets/epicurus-avatar.jpg",
       showQuotes: true,
@@ -111,6 +122,7 @@ export class DataService {
       authorId: "Cicero",
       author: "Cicero",
       desc: "Roman Statesman",
+      category: authorCategoryEnum.ancientPhilosopher,
       info: ["Marcus Tullius Cicero was a Roman statesman, lawyer, scholar, philosopher, and academic skeptic.", "He tried to uphold optimate principles during the political crises that led to the establishment of the Roman Empire."],
       img: "assets/cicero-avatar.jpg",
       showQuotes: true,
@@ -120,6 +132,7 @@ export class DataService {
       authorId: "Socrates",
       author: "Socrates",
       desc: "Greek Philosopher",
+      category: authorCategoryEnum.ancientPhilosopher,
       info: ["Socrates was a Greek philosopher from Athens who is credited as the founder of Western philosophy and among the first moral philosophers of the ethical tradition of thought."],
       img: "assets/socrates-avatar.jpg",
       showQuotes: true,
@@ -129,6 +142,7 @@ export class DataService {
       authorId: "Diogenes",
       author: "Diogenes",
       desc: "Greek Philosopher",
+      category: authorCategoryEnum.ancientPhilosopher,
       info: ["Diogenes, also known as Diogenes the Cynic or Diogenes of Sinope, was a Greek philosopher and one of the founders of Cynicism.", "He was born in Sinope, an Ionian colony on the Black Sea coast of Anatolia in 412 or 404 BC and died at Corinth in 323 BC. Diogenes was a controversial figure."],
       img: "assets/diogenes-avatar.jpg",
       showQuotes: true,
@@ -137,9 +151,30 @@ export class DataService {
     {
       authorId: "England",
       author: "England",
-      desc: "An Anglo Saxon Country",
+      desc: "West-European Country",
+      category: authorCategoryEnum.country,
       info: ["England is a country that is part of the United Kingdom. It shares land borders with Wales to its west and Scotland to its north."],
       img: "assets/england.jpg",
+      showQuotes: true,
+      initialBreakpoint: "0.60"
+    },
+    {
+      authorId: "Jesus",
+      author: "Jesus Christ",
+      desc: "Son of God",
+      category: authorCategoryEnum.religiousFigure,
+      info: ["A first century Jewish preacher and religious leader. He is a central figure of Christianity, the world's largest religion."],
+      img: "assets/jesus-avatar.jpg",
+      showQuotes: true,
+      initialBreakpoint: "0.60"
+    },
+    {
+      authorId: "Bible",
+      author: "The Bible",
+      desc: "Religious Text",
+      category: authorCategoryEnum.religiousFigure,
+      info: ["The Bible is a collection of religious texts or scriptures that are held to be sacred in Christianity, and many other religions."],
+      img: "assets/bible.jpg",
       showQuotes: true,
       initialBreakpoint: "0.60"
     },
@@ -1706,6 +1741,263 @@ export class DataService {
       authorId: "England",
       quote: "Forgive and forget."
     },
+    {
+      authorId: "Jesus",
+      quote: "Do not let your hearts be troubled. Trust in God; trust also in me."
+    },
+    {
+      authorId: "Jesus",
+      quote: "And know that I am with you always; yes, to the end of time."
+    },
+    {
+      authorId: "Jesus",
+      quote: "But I say to you, Love your enemies and pray for those who persecute you, so that you may be sons of your Father in heaven; for he makes his sun rise on the evil and on the good, and sends rain on the just and on the unjust."
+    },
+    {
+      authorId: "Jesus",
+      quote: "For what shall it profit a man, if he gains the whole world, and suffers the loss of his soul?"
+    },
+    {
+      authorId: "Jesus",
+      quote: "A new command I give you: Love one another. As I have loved you, so you must love one another."
+    },
+    {
+      authorId: "Jesus",
+      quote: "For God so loved the World that he gave his only Son, that whoever believes in him should not perish but have eternal life."
+    },
+    {
+      authorId: "Jesus",
+      quote: "Ask and it will be given to you; seek and you will find; knock and the door will be opened to you. For everyone who asks receives; the one who seeks finds; and to the one who knows, the door will be opened."
+    },
+    {
+      authorId: "Jesus",
+      quote: "In the same way, let your light shine before others, that they may see your good deeds and glorify your Father in heaven."
+    },
+    {
+      authorId: "Jesus",
+      quote: "In the same way, let your light shine before others, that they may see your good deeds and glorify your Father in heaven."
+    },
+    {
+      authorId: "Jesus",
+      quote: "Love the Lord your God with all of your heart, all of your soul and all of your mind."
+    },
+    {
+      authorId: "Jesus",
+      quote: "For whoever does the will of my Father in heaven is my brother and sister and mother."
+    },
+    {
+      authorId: "Jesus",
+      quote: "Whoever wants to be first must be a slave of all."
+    },
+    {
+      authorId: "Jesus",
+      quote: "For even the Son of Man did not come to be served, but to serve, and to give his life as a ransom for the many."
+    },
+    {
+      authorId: "Jesus",
+      quote: "For those who exalt themselves will be humbled, and those who humble themselves will be exalted."
+    },
+    {
+      authorId: "Jesus",
+      quote: "When you stand praying, if you hold anything against anyone, forgive them, so that your Father in heaven may forgive you your sins."
+    },
+    {
+      authorId: "Jesus",
+      quote: "Blessed are those who are persecuted because of righteousness, for theirs is the kingdom of heaven."
+    },
+    {
+      authorId: "Jesus",
+      quote: "Blessed are you when people insult you, persecute you and falsely say all kinds of evil against you because of me."
+    },
+    {
+      authorId: "Jesus",
+      quote: "Everyone who drinks this water will be thirsty again, but whoever drinks the water I give them will never thirst. Indeed the water I give them will become in them a spring of water welling up to eternal life."
+    },
+    {
+      authorId: "Jesus",
+      quote: "I am the way, the truth, and the life."
+    },
+    {
+      authorId: "Jesus",
+      quote: "Let the little children come to me, and do not hinder them, for the kingdom of heaven belongs to such as these."
+    },
+    {
+      authorId: "Jesus",
+      quote: "Whoever wants to be my disciple must deny themselves and take up their cross and follow me."
+    },
+    {
+      authorId: "Jesus",
+      quote: "It is not the healthy who need a doctor, but the sick. I have not come to call the righteous, but sinners to repentance."
+    },
+    {
+      authorId: "Jesus",
+      quote: "So in everything, do to others what you would have them do to you, for this sums up the Law and the Prophets."
+    },
+    {
+      authorId: "Jesus",
+      quote: "Love your neigbour as yourself."
+    },
+    {
+      authorId: "Jesus",
+      quote: "Take heart; I have overcome the World."
+    },
+    {
+      authorId: "Jesus",
+      quote: "For my yoke is easy and my burden is light."
+    },
+    {
+      authorId: "Jesus",
+      quote: "With man this is impossible, but with God all things are possible."
+    },
+    {
+      authorId: "Jesus",
+      quote: "It is finished."
+    },
+    {
+      authorId: "Jesus",
+      quote: "He that is without sin among you, let him cast the first stone."
+    },
+    {
+      authorId: "Jesus",
+      quote: "My sheep hear my voice, and I know them, and they follow me: And I give unto them eternal life; and they shall never perish, neither shall any man pluck them out of my hand."
+    },
+    {
+      authorId: "Jesus",
+      quote: "Except a man be born again, he cannot see the kingdom of God."
+    },
+    {
+      authorId: "Jesus",
+      quote: "Seek first the kingdom of God, and his righteousness; and all these things shall be added unto you."
+    },
+    {
+      authorId: "Jesus",
+      quote: "I am the good shepherd: the good shepherd gives his life for the sheep."
+    },
+    {
+      authorId: "Jesus",
+      quote: "I have told you these things, so that in me you may have peace. In this world, you will have trouble. But take heart! I have overcome the world."
+    },
+    {
+      authorId: "Jesus",
+      quote: "Don't worry about tomorrow, for tomorrow will bring its own worries. Today's trouble is enough for you today."
+    },
+    {
+      authorId: "Jesus",
+      quote: "You have said it, and in the future, you will see the Son of Man seated in the place of power at God's right hand and coming on the clouds of Heaven."
+    },
+    {
+      authorId: "Jesus",
+      quote: "My Kingdom is not an earthly kingdom. If it were, my followers would fight to keep me from being handed over to the Jewish leaders. But my Kingdom is not of this world."
+    },
+    {
+      authorId: "Bible",
+      quote: "He only is my rock and my salvaion, my fortress; I shall not be shaken."
+    },
+    {
+      authorId: "Bible",
+      quote: "Be strong and courageous. Do not be afraid; do not be discouraged, for the Lord your God will be with you wherever you go."
+    },
+    {
+      authorId: "Bible",
+      quote: "For we walk by faith, not by sight."
+    },
+    {
+      authorId: "Bible",
+      quote: "So be careful to live your life wisely, not foolishly."
+    },
+    {
+      authorId: "Bible",
+      quote: "Don't you know that you yourselves are God's temple and that God's spirit dwells in your midst?"
+    },
+    {
+      authorId: "Bible",
+      quote: "Cast all your anxiety on him because he cares for you."
+    },
+    {
+      authorId: "Bible",
+      quote: "I can do everything through him who gives me strength."
+    },
+    {
+      authorId: "Bible",
+      quote: "Love is patient, love is kind. It does not envy, it does not boast, it is not proud."
+    },
+    {
+      authorId: "Bible",
+      quote: "You will seek me and find me, when you seek me with all your heart."
+    },
+    {
+      authorId: "Bible",
+      quote: "A time to love and a time to hate, a time for war and a time for peace."
+    },
+    {
+      authorId: "Bible",
+      quote: "Do not gloat over me, my enemy! Though I have fallen, I will rise. Though I sit in darkness, the Lord will be my light."
+    },
+    {
+      authorId: "Bible",
+      quote: "Praise be to the Lord my Rock, who trains my hands for war, my fingers for battle."
+    },
+    {
+      authorId: "Bible",
+      quote: "He is my loving God and my fortress, my stronghold and my deliverer, my shield, in whom I take refuge, who subdues peoples under me."
+    },
+    {
+      authorId: "Bible",
+      quote: "Lord, what are human beings, that you care for them, mere mortals that you think of them? They are like a breath; their days are like a fleeting shadow."
+    },
+    {
+      authorId: "Bible",
+      quote: "When the time is right, I, the Lord, will make it happen."
+    },
+    {
+      authorId: "Bible",
+      quote: "I am he who will sustain you."
+    },
+    {
+      authorId: "Bible",
+      quote: "I am who I am."
+    },
+    {
+      authorId: "Bible",
+      quote: "So do not fear, for I am with you; do not be dismayed, for I am your God, I will strengthem you and help you; I will uphold you with my righteous right hand."
+    },
+    {
+      authorId: "Bible",
+      quote: "The Lord is the everlasting God, the Creator of the ends of the earth. He will not grow tired or weary, and his understanding no one can fathom."
+    },
+    {
+      authorId: "Bible",
+      quote: "He gives power to the faint, and to them that have no might he increases strength, even the youths shall falter and be weary, and the young man shall utterly fall: but they that wait upon the Lord shall renew their strength; they shall mount up with wings as eagles; they shall run and not be weary; and they shall walk and not falter."
+    },
+    {
+      authorId: "Bible",
+      quote: "There is a time to speak and a time to be silent."
+    },
+    {
+      authorId: "Bible",
+      quote: "Oh, taste and see that the Lord is good! Blessed is the man who takes refuge in him!"
+    },
+    {
+      authorId: "Bible",
+      quote: "When you go through deep waters, I will be with you."
+    },
+    {
+      authorId: "Bible",
+      quote: "Faith can move mountains."
+    },
+    {
+      authorId: "Bible",
+      quote: "If God is for us, who can be against us?"
+    },
+    {
+      authorId: "Bible",
+      quote: "God is our refuge and strength, a very present help in trouble."
+    },
+    {
+      authorId: "Bible",
+      quote: "He gives strength to the weary and increases the power of the weak."
+    },
+
   ];
 
   quotesSubject: Subject<quote[]> = new Subject();

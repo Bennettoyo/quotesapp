@@ -6,15 +6,59 @@
       </ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content color="dark">
-    <ion-content color="dark" class="ion-padding">
-      <ng-container *ngFor="let item of authors">
-        <ion-item color="dark">
-          <ion-checkbox (ngModelChange)="showOrHideQuotes($event, item.authorId)" [(ngModel)]="item.showQuotes"
-            slot="start"></ion-checkbox>
-          <ion-label>{{item.author}}</ion-label>
-        </ion-item>
-      </ng-container>
-    </ion-content>
-  </ion-content>
+
+  <ion-item color="dark">
+    <h3 class="item-list-title">Christianity</h3>
+  </ion-item>
+  <ng-container *ngFor="let item of authors">
+    <ion-item *ngIf="item.category === 'religiousFigure'" color="dark">
+      <ion-checkbox (ngModelChange)="showOrHideQuotes($event, item.authorId)" [(ngModel)]="item.showQuotes"
+        slot="start"></ion-checkbox>
+      <ion-label>{{item.author}}</ion-label>
+    </ion-item>
+  </ng-container>
+
+  <ion-item color="dark">
+    <h3 class="item-list-title">Ancient Philosophers</h3>
+  </ion-item>
+  <ng-container *ngFor="let item of authors">
+    <ion-item *ngIf="item.category === 'ancientPhilosopher'" color="dark">
+      <ion-checkbox (ngModelChange)="showOrHideQuotes($event, item.authorId)" [(ngModel)]="item.showQuotes"
+        slot="start"></ion-checkbox>
+      <ion-label>{{item.author}}</ion-label>
+    </ion-item>
+  </ng-container>
+
+  <ion-item color="dark">
+    <h3 class="item-list-title">Philosophers</h3>
+  </ion-item>
+  <ng-container *ngFor="let item of authors">
+    <ion-item *ngIf="item.category === 'philosopher'" color="dark">
+      <ion-checkbox (ngModelChange)="showOrHideQuotes($event, item.authorId)" [(ngModel)]="item.showQuotes"
+        slot="start"></ion-checkbox>
+      <ion-label>{{item.author}}</ion-label>
+    </ion-item>
+  </ng-container>
+
+  <ion-item color="dark">
+    <h3 class="item-list-title">Country Sayings</h3>
+  </ion-item>
+  <ng-container *ngFor="let item of authors">
+    <ion-item *ngIf="item.category === 'country'" color="dark">
+      <ion-checkbox (ngModelChange)="showOrHideQuotes($event, item.authorId)" [(ngModel)]="item.showQuotes"
+        slot="start"></ion-checkbox>
+      <ion-label>{{item.author}}</ion-label>
+    </ion-item>
+  </ng-container>
+
+  <ion-item color="dark">
+    <h3 class="item-list-title">TV Shows</h3>
+  </ion-item>
+  <ng-container *ngFor="let item of authors">
+    <ion-item *ngIf="item.category === 'show'" color="dark">
+      <ion-checkbox (ngModelChange)="showOrHideQuotes($event, item.authorId)" [(ngModel)]="item.showQuotes"
+        slot="start"></ion-checkbox>
+      <ion-label>{{item.author}}</ion-label>
+    </ion-item>
+  </ng-container>
 </ion-content>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common'
 import { author } from '../interfaces/author';
 import { DataService } from '../data.service';
+import { Subject, takeUntil } from 'rxjs';
 
 @Component({
   selector: 'app-authors',
@@ -9,12 +10,13 @@ import { DataService } from '../data.service';
   styleUrls: ['./authors.component.scss'],
 })
 export class AuthorsComponent implements OnInit {
+  stop$ = new Subject<void>();
   authors: author[] = [];
 
   constructor(private location: Location, private dataService: DataService) { }
 
   ngOnInit() {
-    this.dataService.authorsSubject.subscribe((authors: author[]) => {
+    this.dataService.authorsSubject.pipe(takeUntil(this.stop$)).subscribe((authors: author[]) => {
       this.authors = authors;
     });
     this.dataService.getAuthors();
@@ -35,6 +37,10 @@ export class AuthorsComponent implements OnInit {
     this.dataService.setAuthorsAsLocalStorage(this.authors);
     this.dataService.authorsSubject.next(this.dataService.authors);
     this.dataService.getQuotes();
+  }
 
+  ngOnDestroy() {
+    this.stop$.next();
+    this.stop$.complete();
   }
 }

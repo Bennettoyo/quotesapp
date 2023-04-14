@@ -4,6 +4,7 @@ import * as _ from 'lodash';
 import { DataService } from '../data.service';
 import { author } from '../interfaces/author';
 import { quote } from '../interfaces/quote';
+import { Subject, takeUntil } from 'rxjs';
 
 @Component({
   selector: 'app-home',
@@ -11,6 +12,7 @@ import { quote } from '../interfaces/quote';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  stop$ = new Subject<void>();
   @ViewChild('slides', { static: true }) slides!: IonSlides;
   @ViewChild('pageTop') pageTop!: IonContent;
   currentAuthor = {
@@ -35,11 +37,11 @@ export class HomePage {
   }
 
   ngOnInit() {
-    this.dataService.authorsSubject.subscribe((authors: author[]) => {
+    this.dataService.authorsSubject.pipe(takeUntil(this.stop$)).subscribe((authors: author[]) => {
       this.authors = authors;
       this.resetSlides();
     });
-    this.dataService.quotesSubject.subscribe((quotes: quote[]) => {
+    this.dataService.quotesSubject.pipe(takeUntil(this.stop$)).subscribe((quotes: quote[]) => {
       this.quotes = this.shuffle(quotes);
       this.shuffledCollection = this.shuffle(this.quotes);
       this.resetSlides();
@@ -76,5 +78,10 @@ export class HomePage {
         initialBreakpoint: item.initialBreakpoint,
       }
     }
+  }
+
+  ngOnDestroy() {
+    this.stop$.next();
+    this.stop$.complete();
   }
 }
